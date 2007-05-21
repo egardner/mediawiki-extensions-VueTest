@@ -24,13 +24,15 @@ class MyExtension extends SpecialPage
         function loadMessages() {
                 static $messagesLoaded = false;
                 global $wgMessageCache;
-                if ( $messagesLoaded ) return;
+                if ( $messagesLoaded ) return true;
                 $messagesLoaded = true;
 
                 require( dirname( __FILE__ ) . '/MyExtension.i18n.php' );
                 foreach ( $allMessages as $lang => $langMessages ) {
                         $wgMessageCache->addMessages( $langMessages, $lang );
                 }
+
+				return true;
         }
 }
 ?>
