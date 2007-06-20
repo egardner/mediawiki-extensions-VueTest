@@ -30,6 +30,7 @@ function wfExampleParserFunction_Magic( &$magicWords, $langCode ) {
 	# The first array element is case sensitivity, in this case it is not case sensitive
 	# All remaining elements are synonyms for our parser function
 	$magicWords['example'] = array( 0, 'example' );
+	return true;
 }
 
 function wfExampleParserFunction_Render( &$parser, $param1 = '', $param2 = '' ) {
