@@ -40,4 +40,4 @@ function wfExampleParserFunction_Render( &$parser, $param1 = '', $param2 = '' ) 
 	return "param1 is $param1 and param2 is $param2";
 }
 
-?>
+

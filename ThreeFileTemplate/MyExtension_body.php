@@ -35,4 +35,4 @@ class MyExtension extends SpecialPage
 				return true;
         }
 }
-?>
+

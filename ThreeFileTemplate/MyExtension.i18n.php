@@ -4,4 +4,4 @@ $allMessages = array(
                 'myextension' => 'My Extension'
         )
 );
-?>
+

@@ -12,4 +12,4 @@ $wgAutoloadClasses['MyExtension'] = dirname(__FILE__) . '/MyExtension_body.php';
 $wgSpecialPages['MyExtension'] = 'MyExtension';
 $wgHooks['LoadAllMessages'][] = 'MyExtension::loadMessages';
 
-?>
+
