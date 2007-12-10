@@ -14,16 +14,17 @@ if (!defined('MEDIAWIKI')) die();
 $wgExtensionFunctions[] = 'wfIncludable';
 $wgExtensionCredits['specialpage'][] = array(
 	'name' => 'Includable',
-	'description' => 'a sample includable Special Page',
-	'author' => 'Ævar Arnfjörð Bjarmason'
+	'version' => '1.0',
+	//'url' => 'http://www.mediawiki.org/wiki/Extension:SpecialIncludable',
+	'description' => 'A sample includable Special Page',
+	'author' => 'Ævar Arnfjörð Bjarmason',
 );
-	
 
 function wfIncludable() {
 	global $IP, $wgMessageCache;
 
 	$wgMessageCache->addMessage( 'includable', 'Includable' );
-	
+
 	require_once "$IP/includes/SpecialPage.php";
 	class SpecialIncludable extends SpecialPage {
 		/**
@@ -39,7 +40,7 @@ function wfIncludable() {
 		 */
 		function execute( $par = null ) {
 			global $wgOut;
-			
+
 			if ( $this->including() )
 				$out = "I'm being included";
 			else {
@@ -50,6 +51,6 @@ function wfIncludable() {
 			$wgOut->addHtml( $out );
 		}
 	}
-	
+
 	SpecialPage::addPage( new SpecialIncludable );
 }
