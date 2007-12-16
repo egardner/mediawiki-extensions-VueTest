@@ -15,10 +15,8 @@ $wgHooks['LanguageGetMagic'][] = 'wfVariableHookRaw';
 $wgHooks['ParserGetVariableValueSwitch'][] = 'wfVariableHookSwitch';
 $wgExtensionCredits['variable'][] = array(
 	'name' => 'Parser hook',
-	'version' => '1.1',
-	//'url' => 'http://www.mediawiki.org/wiki/Extension:Variable_hook',
 	'description' => 'a sample variable hook',
-	'author' => 'Ævar Arnfjörð Bjarmason',
+	'author' => 'Ævar Arnfjörð Bjarmason'
 );
 
 function wfVariableHookVariables( &$wgVariableIDs ) {
@@ -36,7 +34,7 @@ function wfVariableHookRaw( &$raw ) {
 function wfVariableHookSwitch( &$parser, &$varCache, &$index, &$ret ) {
 	if ( $index === 'example' )
 		$ret = $varCache[$index] = wfVariableHookRet();
-
+	
 	return true;
 }
 

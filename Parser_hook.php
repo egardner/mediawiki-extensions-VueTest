@@ -14,15 +14,13 @@ if (!defined('MEDIAWIKI')) die();
 $wgExtensionFunctions[] = 'wfParserHook';
 $wgExtensionCredits['parserhook'][] = array(
 	'name' => 'Parser hook',
-	'version' => '1.0',
-	//'url' => 'http://www.mediawiki.org/wiki/Extension:Parser_hook',
 	'description' => 'a sample parser hook',
 	'author' => 'Ævar Arnfjörð Bjarmason'
 );
 
 function wfParserHook() {
 	global $wgParser;
-
+	
 	$wgParser->setHook( 'hook' , 'wfParserHookParse' );
 }
 
@@ -36,3 +34,4 @@ function wfParserHookParse( $in, $argv ) {
 	else
 		return '<pre>' . $in . "\n" . print_r( $argv, true ) . '</pre>';
 }
+

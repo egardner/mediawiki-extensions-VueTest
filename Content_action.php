@@ -11,8 +11,6 @@
 $wgExtensionFunctions[] = 'wfAddaction';
 $wgExtensionCredits['other'][] = array(
 	'name' => 'Content action hook',
-	'version' => '1.0',
-	//'url' => 'http://www.mediawiki.org/wiki/Extension:Content_action',
 	'author' => 'Ævar Arnfjörð Bjarmason',
 	'desciprion' => 'Adds a new tab to each page',
 );
@@ -27,7 +25,7 @@ function wfAddaction() {
 
 function wfAddActionContentHook( &$content_actions ) {
 	global $wgRequest, $wgRequest, $wgTitle;
-
+	
 	$action = $wgRequest->getText( 'action' );
 
 	if ( $wgTitle->getNamespace() != NS_SPECIAL ) {
@@ -43,9 +41,9 @@ function wfAddActionContentHook( &$content_actions ) {
 
 function wfAddactActionHook( $action, &$wgArticle ) {
 	global $wgOut;
-
-	$title = $wgArticle->getTitle();
-
+	
+	$title = $wgArticle->getTitle(); 
+	
 	if ( $action == 'myact' )
 		$wgOut->addHTML( 'The page name is ' . $title->getText() . ' and you are ' . $wgArticle->getUserText() );
 
