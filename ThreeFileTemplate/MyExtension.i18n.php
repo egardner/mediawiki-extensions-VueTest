@@ -1,5 +1,5 @@
 <?php
-$allMessages = array(
+$messages = array(
         'en' => array( 
                 'myextension' => 'My Extension'
         )

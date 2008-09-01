@@ -1,38 +1,24 @@
 <?php
 class MyExtension extends SpecialPage
 {
-        function MyExtension() {
-                SpecialPage::SpecialPage("MyExtension");
-                self::loadMessages();
-        }
+	function MyExtension() {
+		parent::__construct("MyExtension");
+		wfLoadExtensionMessages( 'MyExtension' );
+	}
 
-        function execute( $par ) {
-                global $wgRequest, $wgOut;
-                
-                $this->setHeaders();
+	function execute( $par ) {
+		global $wgRequest, $wgOut;
 
-                # Get request data from, e.g.
-                $param = $wgRequest->getText('param');
-                
-                # Do stuff
-                # ...
+		$this->setHeaders();
 
-                # Output
-                # $wgOut->addHTML( $output );
-        }
+		# Get request data from, e.g.
+		$param = $wgRequest->getText('param');
 
-        function loadMessages() {
-                static $messagesLoaded = false;
-                global $wgMessageCache;
-                if ( $messagesLoaded ) return true;
-                $messagesLoaded = true;
+		# Do stuff
+		# ...
 
-                require( dirname( __FILE__ ) . '/MyExtension.i18n.php' );
-                foreach ( $allMessages as $lang => $langMessages ) {
-                        $wgMessageCache->addMessages( $langMessages, $lang );
-                }
-
-				return true;
-        }
+		# Output
+		# $wgOut->addHTML( $output );
+	}
 }
 

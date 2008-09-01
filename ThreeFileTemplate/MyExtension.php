@@ -10,6 +10,4 @@ EOT;
 
 $wgAutoloadClasses['MyExtension'] = dirname(__FILE__) . '/MyExtension_body.php';
 $wgSpecialPages['MyExtension'] = 'MyExtension';
-$wgHooks['LoadAllMessages'][] = 'MyExtension::loadMessages';
-
-
+$wgExtensionMessagesFiles['MyExtension'] = dirname(__FILE__) . '/MyExtension.i18n.php';
