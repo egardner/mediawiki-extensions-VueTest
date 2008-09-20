@@ -8,6 +8,6 @@
 $messages = array();
 
 $messages['en'] = array(
-	'myextension-desc' => 'MyExtension description'
+	'myextension-desc' => 'MyExtension description',
 	'myextension' => 'My extension'
 );
