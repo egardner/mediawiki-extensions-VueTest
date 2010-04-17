@@ -2,7 +2,7 @@
 class MyExtension extends SpecialPage
 {
 	function MyExtension() {
-		parent::__construct("MyExtension");
+		parent::__construct( "MyExtension" );
 	}
 
 	function execute( $par ) {
@@ -13,7 +13,7 @@ class MyExtension extends SpecialPage
 		wfLoadExtensionMessages( 'MyExtension' );
 
 		# Get request data from, e.g.
-		$param = $wgRequest->getText('param');
+		$param = $wgRequest->getText( 'param' );
 
 		# Do stuff
 		# ...

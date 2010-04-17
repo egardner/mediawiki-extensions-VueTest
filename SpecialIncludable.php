@@ -1,5 +1,5 @@
 <?php
-if (!defined('MEDIAWIKI')) die();
+if ( !defined( 'MEDIAWIKI' ) ) die();
 /**
  * A Special Page sample that can be included on a wikipage like
  * {{Special:Inc}} as well as being accessed on [[Special:Inc]]

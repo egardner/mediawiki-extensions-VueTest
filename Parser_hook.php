@@ -1,5 +1,5 @@
 <?php
-if (!defined('MEDIAWIKI')) die();
+if ( !defined( 'MEDIAWIKI' ) ) die();
 /**
  * A parser hook example, use it on a page like
  * <hook arg1="foo" arg2="bar" ...>input</hook>

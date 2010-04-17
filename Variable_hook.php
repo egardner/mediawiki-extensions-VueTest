@@ -1,5 +1,5 @@
 <?php
-if (!defined('MEDIAWIKI')) die();
+if ( !defined( 'MEDIAWIKI' ) ) die();
 /**
  * An example parser hook that defines a new variable, {{EXAMPLE}}
  *
@@ -27,7 +27,7 @@ function wfVariableHookVariables( &$wgVariableIDs ) {
 }
 
 function wfVariableHookRaw( &$raw ) {
-	$raw['example'] = array( 0, 'EXAMPLE' );;
+	$raw['example'] = array( 0, 'EXAMPLE' ); ;
 
 	return true;
 }

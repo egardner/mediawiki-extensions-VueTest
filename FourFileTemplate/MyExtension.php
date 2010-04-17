@@ -1,6 +1,6 @@
 <?php
 # Not a valid entry point, skip unless MEDIAWIKI is defined
-if (!defined('MEDIAWIKI')) {
+if ( !defined( 'MEDIAWIKI' ) ) {
         echo <<<EOT
 To install my extension, put the following line in LocalSettings.php:
 require_once( "\$IP/extensions/MyExtension/MyExtension.php" );
@@ -17,7 +17,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'descriptionmsg' => 'myextension-desc',
 );
 
-$dir = dirname(__FILE__) . '/';
+$dir = dirname( __FILE__ ) . '/';
 $wgAutoloadClasses['MyExtension'] = $dir . 'MyExtension_body.php';
 $wgSpecialPages['MyExtension'] = 'MyExtension';
 $wgExtensionMessagesFiles['MyExtension'] = $dir . 'MyExtension.i18n.php';
