@@ -10,6 +10,8 @@ class MyExtension extends SpecialPage
 
 		$this->setHeaders();
 
+		wfLoadExtensionMessages( 'MyExtension' );
+
 		# Get request data from, e.g.
 		$param = $wgRequest->getText( 'param' );
 
