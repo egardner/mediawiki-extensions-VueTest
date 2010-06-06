@@ -3,7 +3,8 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
 /**
  * An example parser hook that defines a new variable, {{EXAMPLE}}
  *
- * @addtogroup Extensions
+ * @file
+ * @ingroup Extensions
  *
  * @author Ævar Arnfjörð Bjarmason <avarab@gmail.com>
  * @copyright Copyright © 2005, Ævar Arnfjörð Bjarmason

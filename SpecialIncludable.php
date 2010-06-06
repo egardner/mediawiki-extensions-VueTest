@@ -4,7 +4,8 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
  * A Special Page sample that can be included on a wikipage like
  * {{Special:Inc}} as well as being accessed on [[Special:Inc]]
  *
- * @addtogroup Extensions
+ * @file
+ * @ingroup Extensions
  *
  * @author Ævar Arnfjörð Bjarmason <avarab@gmail.com>
  * @copyright Copyright © 2005, Ævar Arnfjörð Bjarmason

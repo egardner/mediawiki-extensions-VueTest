@@ -4,7 +4,8 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
  * A parser hook example, use it on a page like
  * <hook arg1="foo" arg2="bar" ...>input</hook>
  *
- * @addtogroup Extensions
+ * @file
+ * @ingroup Extensions
  *
  * @author Ævar Arnfjörð Bjarmason <avarab@gmail.com>
  * @copyright Copyright © 2005, Ævar Arnfjörð Bjarmason
