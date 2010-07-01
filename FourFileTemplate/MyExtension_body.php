@@ -1,6 +1,5 @@
 <?php
-class MyExtension extends SpecialPage
-{
+class MyExtension extends SpecialPage {
 	function MyExtension() {
 		parent::__construct( "MyExtension" );
 	}
@@ -9,8 +8,6 @@ class MyExtension extends SpecialPage
 		global $wgRequest, $wgOut;
 
 		$this->setHeaders();
-
-		wfLoadExtensionMessages( 'MyExtension' );
 
 		# Get request data from, e.g.
 		$param = $wgRequest->getText( 'param' );

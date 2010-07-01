@@ -12,6 +12,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'path' => __FILE__,
 	'name' => 'MyExtensionName',
 	'version' => '0.1',
+	// You can use array for multiple authors
 	'author' => 'MyExtensionAuthor',
 	'url' => 'http://www.mediawiki.org/wiki/Extension:MyExtension',
 	'descriptionmsg' => 'myextension-desc',

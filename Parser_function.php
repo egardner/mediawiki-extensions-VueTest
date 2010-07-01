@@ -15,14 +15,14 @@ EOT;
 }
 
 # Define a setup function
-$wgExtensionFunctions[] = 'wfExampleParserFunction_Setup';
+$wgHooks['ParserFirstCallInit'][] = 'wfExampleParserFunction_Setup';
 # Add a hook to initialise the magic word
-$wgHooks['LanguageGetMagic'][]       = 'wfExampleParserFunction_Magic';
+$wgHooks['LanguageGetMagic'][] = 'wfExampleParserFunction_Magic';
 
-function wfExampleParserFunction_Setup() {
-	global $wgParser;
+function wfExampleParserFunction_Setup( $parser ) {
 	# Set a function hook associating the "example" magic word with our function
-	$wgParser->setFunctionHook( 'example', 'wfExampleParserFunction_Render' );
+	$parser->setFunctionHook( 'example', 'wfExampleParserFunction_Render' );
+	return true;
 }
 
 function wfExampleParserFunction_Magic( &$magicWords, $langCode ) {

@@ -19,6 +19,8 @@ $wgExtensionCredits['other'][] = array(
 
 function wfAddaction() {
 	global $wgHooks, $wgMessageCache;
+	// This is not the proper way to do i18n
+	// See FourFileTemplate how to do i18n
 	$wgMessageCache->addMessage( 'myact', 'My action' );
 	$wgHooks['SkinTemplateContentActions'][] = 'wfAddactionContentHook';
 	$wgHooks['UnknownAction'][] = 'wfAddactActionHook';
@@ -31,7 +33,7 @@ function wfAddActionContentHook( &$content_actions ) {
 
 	if ( $wgTitle->getNamespace() != NS_SPECIAL ) {
 		$content_actions['myact'] = array(
-			'class' => $action == 'myact' ? 'selected' : false,
+			'class' => $action === 'myact' ? 'selected' : false,
 			'text' => wfMsg( 'myact' ),
 			'href' => $wgTitle->getLocalUrl( 'action=myact' )
 		);
@@ -45,8 +47,9 @@ function wfAddactActionHook( $action, &$wgArticle ) {
 	
 	$title = $wgArticle->getTitle();
 	
-	if ( $action == 'myact' )
-		$wgOut->addHTML( 'The page name is ' . $title->getText() . ' and you are ' . $wgArticle->getUserText() );
+	if ( $action === 'myact' ) {
+		$wgOut->addWikiText( 'The page name is ' . $title->getText() . ' and you are ' . $wgArticle->getUserText() );
+	}
 
 	return false;
 }

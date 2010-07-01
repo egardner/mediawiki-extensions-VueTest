@@ -28,15 +28,15 @@ function wfVariableHookVariables( &$wgVariableIDs ) {
 }
 
 function wfVariableHookRaw( &$raw ) {
-	$raw['example'] = array( 0, 'EXAMPLE' ); ;
+	$raw['example'] = array( 0, 'EXAMPLE' );
 
 	return true;
 }
 
 function wfVariableHookSwitch( &$parser, &$varCache, &$index, &$ret ) {
-	if ( $index === 'example' )
+	if ( $index === 'example' ) {
 		$ret = $varCache[$index] = wfVariableHookRet();
-	
+	}
 	return true;
 }
 

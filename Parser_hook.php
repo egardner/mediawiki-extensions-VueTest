@@ -8,11 +8,11 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
  * @ingroup Extensions
  *
  * @author Ævar Arnfjörð Bjarmason <avarab@gmail.com>
+ * @author Niklas Laxström
  * @copyright Copyright © 2005, Ævar Arnfjörð Bjarmason
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-$wgExtensionFunctions[] = 'wfParserHook';
 $wgExtensionCredits['parserhook'][] = array(
 	'path' => __FILE__,
 	'name' => 'Parser hook',
@@ -20,20 +20,22 @@ $wgExtensionCredits['parserhook'][] = array(
 	'author' => 'Ævar Arnfjörð Bjarmason'
 );
 
-function wfParserHook() {
-	global $wgParser;
-	
-	$wgParser->setHook( 'hook' , 'wfParserHookParse' );
+$wgHooks['ParserFirstCallInit'][] = 'wfParserHook';
+
+function wfParserHook( $parser ) {
+	$parser->setHook( 'hook' , 'wfParserHookParse' );
+	return true;
 }
 
 /**
  * @param string $in The input passed to <hook>
  * @param array $argv The attributes of the <hook> element in array form
  */
-function wfParserHookParse( $in, $argv ) {
-	if ( ! count( $argv ) )
-		return $in;
-	else
-		return '<pre>' . $in . "\n" . print_r( $argv, true ) . '</pre>';
+function wfParserHookParse( $data, $params, $parser ) {
+	if ( !count( $params ) ) {
+		return $data;
+	} else {
+		return '<pre>' . $data . "\n" . print_r( $params, true ) . '</pre>';
+	}
 }
 
