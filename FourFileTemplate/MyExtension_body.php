@@ -1,6 +1,6 @@
 <?php
 class MyExtension extends SpecialPage {
-	function MyExtension() {
+	function __construct() {
 		parent::__construct( "MyExtension" );
 	}
 

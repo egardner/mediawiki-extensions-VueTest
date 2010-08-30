@@ -29,7 +29,7 @@ class SpecialIncludable extends SpecialPage {
 	/**
 		* Constructor
 		*/
-	function SpecialIncludable() {
+	function __construct() {
 		parent::__construct( 'Includable' );
 		$this->includable( true );
 	}
