@@ -42,13 +42,13 @@ function wfAddActionContentHook( &$content_actions ) {
 	return true;
 }
 
-function wfAddactActionHook( $action, &$wgArticle ) {
+function wfAddactActionHook( $action, &$article ) {
 	global $wgOut;
 	
-	$title = $wgArticle->getTitle();
+	$title = $article->getTitle();
 	
 	if ( $action === 'myact' ) {
-		$wgOut->addWikiText( 'The page name is ' . $title->getText() . ' and you are ' . $wgArticle->getUserText() );
+		$wgOut->addWikiText( 'The page name is ' . $title->getText() . ' and you are ' . $article->getUserText() );
 	}
 
 	return false;
