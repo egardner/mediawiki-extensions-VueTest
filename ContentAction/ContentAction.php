@@ -8,7 +8,6 @@
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-$wgExtensionFunctions[] = 'wfAddaction';
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Content action hook',
@@ -16,15 +15,10 @@ $wgExtensionCredits['other'][] = array(
 	'description' => 'Adds a new tab to each page',
 );
 
+$wgHooks['UnknownAction'][] = 'wfAddactActionHook';
+$wgHooks['SkinTemplateContentActions'][] = 'wfAddactionContentHook';
 
-function wfAddaction() {
-	global $wgHooks, $wgMessageCache;
-	// This is not the proper way to do i18n
-	// See FourFileTemplate how to do i18n
-	$wgMessageCache->addMessage( 'myact', 'My action' );
-	$wgHooks['SkinTemplateContentActions'][] = 'wfAddactionContentHook';
-	$wgHooks['UnknownAction'][] = 'wfAddactActionHook';
-}
+$wgExtensionMessagesFiles['ContentAction'] = dirname( __FILE__ ) . '/ContentAction.i18n.php';
 
 function wfAddActionContentHook( &$content_actions ) {
 	global $wgRequest, $wgRequest, $wgTitle;
@@ -49,7 +43,8 @@ function wfAddactActionHook( $action, &$article ) {
 	
 	if ( $action === 'myact' ) {
 		$wgOut->addWikiText( 'The page name is ' . $title->getText() . ' and you are ' . $article->getUserText() );
+		return false;
 	}
 
-	return false;
+	return true;
 }
