@@ -16,27 +16,27 @@ $wgExtensionCredits['other'][] = array(
 );
 
 $wgHooks['UnknownAction'][] = 'wfAddactActionHook';
-$wgHooks['SkinTemplateContentActions'][] = 'wfAddactionContentHook';
+$wgHooks['SkinTemplateNavigation'][] = 'wfAddactionContentHook';
 
 $wgExtensionMessagesFiles['ContentAction'] = dirname( __FILE__ ) . '/ContentAction.i18n.php';
 
-function wfAddActionContentHook( &$content_actions ) {
-	global $wgRequest, $wgRequest, $wgTitle;
+function wfAddActionContentHook( $skin, &$content_actions ) {
+	global $wgRequest;
 	
 	$action = $wgRequest->getText( 'action' );
 
-	if ( $wgTitle->getNamespace() != NS_SPECIAL ) {
-		$content_actions['myact'] = array(
+	if ( $skin->getTitle()->getNamespace() != NS_SPECIAL ) {
+		$content_actions['actions']['myact'] = array(
 			'class' => $action === 'myact' ? 'selected' : false,
 			'text' => wfMsg( 'myact' ),
-			'href' => $wgTitle->getLocalUrl( 'action=myact' )
+			'href' => $skin->getTitle()->getLocalUrl( 'action=myact' )
 		);
 	}
 
 	return true;
 }
 
-function wfAddactActionHook( $action, &$article ) {
+function wfAddactActionHook( $action, $article ) {
 	global $wgOut;
 	
 	$title = $article->getTitle();
