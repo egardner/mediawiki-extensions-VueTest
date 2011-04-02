@@ -1,6 +1,6 @@
 <?php
 /**
- * Internationalisation file for extension MyExtension.
+ * Internationalisation file for MyExtension extension.
  *
  * @file
  * @ingroup Extensions
@@ -8,7 +8,8 @@
 
 $messages = array();
 
+/** English */
 $messages['en'] = array(
+	'myextension' => 'My extension',
 	'myextension-desc' => 'MyExtension description',
-	'myextension' => 'My extension'
 );
