@@ -25,18 +25,17 @@ $wgSpecialPages['Includable'] = 'SpecialIncludable';
 // See FourFileTemplate how to do i18n
 //$wgExtensionMessagesFiles['Includable'] = dirname( __FILE__ ) . '/Includable.i18n.php';
 
-class SpecialIncludable extends SpecialPage {
+class SpecialIncludable extends IncludableSpecialPage {
 	/**
 		* Constructor
 		*/
 	function __construct() {
 		parent::__construct( 'Includable' );
-		$this->includable( true );
 	}
 
 	/**
-		* main()
-		*/
+	 * main()
+	 */
 	function execute( $par = null ) {
 		global $wgOut;
 		
