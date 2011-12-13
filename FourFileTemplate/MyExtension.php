@@ -26,7 +26,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'version' => '0.1',
 	'author' => 'MyExtensionAuthor', // You can use array for multiple authors
 	'descriptionmsg' => 'myextension-desc',
-	'url' => 'http://www.mediawiki.org/wiki/Extension:MyExtension',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:MyExtension',
 );
 
 // Autoload classes, set up the special page and i18n
