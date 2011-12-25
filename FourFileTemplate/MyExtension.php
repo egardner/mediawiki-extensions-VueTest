@@ -34,4 +34,4 @@ $dir = dirname( __FILE__ ) . '/';
 $wgAutoloadClasses['MyExtension'] = $dir . 'MyExtension_body.php';
 $wgSpecialPages['MyExtension'] = 'MyExtension';
 $wgExtensionMessagesFiles['MyExtension'] = $dir . 'MyExtension.i18n.php';
-$wgExtensionAliasesFiles['MyExtension'] = $dir . 'MyExtension.alias.php';
+$wgExtensionMessagesFiles['MyExtensionAlias'] = $dir . 'MyExtension.alias.php';
