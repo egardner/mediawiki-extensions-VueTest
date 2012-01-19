@@ -11,9 +11,6 @@ if ( !defined( 'MEDIAWIKI' ) ) die();
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
  */
 
-$wgHooks['MagicWordwgVariableIDs'][] = 'wfVariableHookVariables';
-$wgHooks['LanguageGetMagic'][] = 'wfVariableHookRaw';
-$wgHooks['ParserGetVariableValueSwitch'][] = 'wfVariableHookSwitch';
 $wgExtensionCredits['variable'][] = array(
 	'path' => __FILE__,
 	'name' => 'Parser hook',
@@ -21,14 +18,14 @@ $wgExtensionCredits['variable'][] = array(
 	'author' => 'Ævar Arnfjörð Bjarmason'
 );
 
+$wgHooks['MagicWordwgVariableIDs'][] = 'wfVariableHookVariables';
+$wgHooks['ParserGetVariableValueSwitch'][] = 'wfVariableHookSwitch';
+
+$dir = dirname(__FILE__) . '/';
+$wgExtensionMessagesFiles['Variable_hookMagic'] = $dir . 'Variable_hook.i18n.magic.php';
+
 function wfVariableHookVariables( &$wgVariableIDs ) {
 	$wgVariableIDs[] = 'example';
-
-	return true;
-}
-
-function wfVariableHookRaw( &$raw ) {
-	$raw['example'] = array( 0, 'EXAMPLE' );
 
 	return true;
 }

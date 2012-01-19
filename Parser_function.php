@@ -5,7 +5,7 @@
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo <<<EOT
 <html><body>
-<p>This is the Parser_function example extension. To enable it, put the 
+<p>This is the Parser_function example extension. To enable it, put the
 following in your LocalSettings.php:</p>
 <pre>
     require_once( "\$IP/extensions/examples/Parser_function.php" );
@@ -16,20 +16,13 @@ EOT;
 
 # Define a setup function
 $wgHooks['ParserFirstCallInit'][] = 'wfExampleParserFunction_Setup';
-# Add a hook to initialise the magic word
-$wgHooks['LanguageGetMagic'][] = 'wfExampleParserFunction_Magic';
+# Add a file to initialise the magic word
+$dir = dirname(__FILE__) . '/';
+$wgExtensionMessagesFiles['Parser_functionMagic'] = $dir . 'Parser_function.i18n.magic.php';
 
 function wfExampleParserFunction_Setup( $parser ) {
 	# Set a function hook associating the "example" magic word with our function
 	$parser->setFunctionHook( 'example', 'wfExampleParserFunction_Render' );
-	return true;
-}
-
-function wfExampleParserFunction_Magic( &$magicWords, $langCode ) {
-	# Add the magic word
-	# The first array element is case sensitivity, in this case it is not case sensitive
-	# All remaining elements are synonyms for our parser function
-	$magicWords['example'] = array( 0, 'example' );
 	return true;
 }
 
@@ -39,5 +32,3 @@ function wfExampleParserFunction_Render( &$parser, $param1 = '', $param2 = '' ) 
 	# The output should be wikitext too
 	return "param1 is $param1 and param2 is $param2";
 }
-
-
