@@ -28,7 +28,7 @@
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo <<<EOT
 To install this extension, put the following line in LocalSettings.php:
-require_once( "\$IP/extensions/HelloWorld/HelloWorld.php" );\n
+require_once( "\$IP/extensions/examples/HelloWorld/HelloWorld.php" );\n
 EOT;
 	exit( 1 );
 }
