@@ -3,7 +3,7 @@ HelloWorld Extension
 * Download the latest available version and extract it to your wiki extension directory. 
 * Add the following line to LocalSettings.php:
 
-	require_once( "$IP/extensions/examples/HelloWorld/HelloWorld.php" );
+	require_once( "$IP/extensions/HelloWorld/HelloWorld.php" );
 
 * Check out the Special:HelloWorld page to verify the installation.
 

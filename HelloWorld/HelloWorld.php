@@ -24,11 +24,11 @@
  * @author Ryan Kaldari
  */
 
-// Tell the user how to install the extension if they try to access the page directly.
+// Alert the user that this is not a valid entry point to MediaWiki if they try to access the file directly.
 if ( !defined( 'MEDIAWIKI' ) ) {
 	echo <<<EOT
-To install this extension, put the following line in LocalSettings.php:
-require_once( "\$IP/extensions/examples/HelloWorld/HelloWorld.php" );\n
+This extension can only be run from within MediaWiki. To install this extension,
+follow the directions in the INSTALL file.\n
 EOT;
 	exit( 1 );
 }
