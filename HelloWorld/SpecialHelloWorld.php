@@ -26,7 +26,7 @@ class SpecialHelloWorld extends SpecialPage {
 		global $wgOut;
 		
 		// Output the title of the page
-		$wgOut->setPageTitle( wfMsg( 'helloworld' ) );
+		$wgOut->setPageTitle( wfMessage( 'helloworld' ) );
 		// Output a hello world message as the content of the page
 		$wgOut->addWikiMsg( 'helloworld-hello' );
 	}
