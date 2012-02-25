@@ -26,3 +26,21 @@ See http://www.mediawiki.org/wiki/Extension:HelloWorld',
 	'helloworld' => 'The name of the extension HelloWorld',
 	'helloworld-hello' => 'A short message of greetings',
 );
+
+/** German (Deutsch)
+ * @author Metalhead64
+ */
+$messages['de'] = array(
+	'helloworld' => 'HelloWorld',
+	'helloworld-hello' => 'Hallo Welt!',
+);
+
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'helloworld-desc' => 'Isto es un exemplo de un extension basic de MediaWiki',
+	'helloworld' => 'HalloMundo',
+	'helloworld-hello' => 'Hallo, mundo!',
+);
+
