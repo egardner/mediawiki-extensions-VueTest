@@ -27,12 +27,50 @@ See http://www.mediawiki.org/wiki/Extension:HelloWorld',
 	'helloworld-hello' => 'A short message of greetings',
 );
 
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'helloworld-desc' => 'Гэта прыклад простага пашырэньня MediaWiki',
+	'helloworld' => 'HelloWorld',
+	'helloworld-hello' => 'Hello World!',
+);
+
 /** German (Deutsch)
+ * @author Kghbln
  * @author Metalhead64
  */
 $messages['de'] = array(
+	'helloworld-desc' => 'Ermöglicht das Beispiel einer einfachen MediaWiki-Erweiterung',
 	'helloworld' => 'HelloWorld',
 	'helloworld-hello' => 'Hallo Welt!',
+);
+
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'helloworld-desc' => 'To jo pśikład jadnorego rozšyrjenja MediaWiki',
+	'helloworld' => 'HelloWorld',
+	'helloworld-hello' => 'Witaj swět!',
+);
+
+/** Spanish (Español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'helloworld-desc' => 'Este es un ejemplo de una extensión básica de MediaWiki',
+	'helloworld' => 'HolaMundo',
+	'helloworld-hello' => '¡Hola mundo!',
+);
+
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
+$messages['hsb'] = array(
+	'helloworld-desc' => 'To je přikład jednoreho rozšěrjenja MediaWiki',
+	'helloworld' => 'HelloWorld',
+	'helloworld-hello' => 'Witaj swět!',
 );
 
 /** Interlingua (Interlingua)
@@ -42,5 +80,14 @@ $messages['ia'] = array(
 	'helloworld-desc' => 'Isto es un exemplo de un extension basic de MediaWiki',
 	'helloworld' => 'HalloMundo',
 	'helloworld-hello' => 'Hallo, mundo!',
+);
+
+/** Macedonian (Македонски)
+ * @author Bjankuloski06
+ */
+$messages['mk'] = array(
+	'helloworld-desc' => 'Ова е пример за прост додаток за MediaWiki',
+	'helloworld' => 'HelloWorld',
+	'helloworld-hello' => 'Здраво свету!',
 );
 
