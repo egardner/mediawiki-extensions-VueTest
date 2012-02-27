@@ -64,6 +64,15 @@ $messages['es'] = array(
 	'helloworld-hello' => '¡Hola mundo!',
 );
 
+/** Galician (Galego)
+ * @author Toliño
+ */
+$messages['gl'] = array(
+	'helloworld-desc' => 'Este é un exemplo dunha extensión básica de MediaWiki',
+	'helloworld' => 'Ola mundo',
+	'helloworld-hello' => 'Ola mundo!',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
@@ -89,5 +98,14 @@ $messages['mk'] = array(
 	'helloworld-desc' => 'Ова е пример за прост додаток за MediaWiki',
 	'helloworld' => 'HelloWorld',
 	'helloworld-hello' => 'Здраво свету!',
+);
+
+/** Dutch (Nederlands)
+ * @author SPQRobin
+ */
+$messages['nl'] = array(
+	'helloworld-desc' => 'Dit is een voorbeeld van een eenvoudige MediaWiki-uitbreiding',
+	'helloworld' => 'HelloWorld',
+	'helloworld-hello' => 'Hallo wereld!',
 );
 
