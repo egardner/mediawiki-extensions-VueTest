@@ -64,6 +64,15 @@ $messages['es'] = array(
 	'helloworld-hello' => '¡Hola mundo!',
 );
 
+/** Persian (فارسی)
+ * @author ZxxZxxZ
+ */
+$messages['fa'] = array(
+	'helloworld-desc' => 'این نمونه‌ای از یک افزونهٔ سادهٔ مدیاویکی است',
+	'helloworld' => 'سلام دنیا',
+	'helloworld-hello' => 'سلام دنیا!',
+);
+
 /** French (Français)
  * @author Gomoko
  */
@@ -98,6 +107,15 @@ $messages['ia'] = array(
 	'helloworld-desc' => 'Isto es un exemplo de un extension basic de MediaWiki',
 	'helloworld' => 'HalloMundo',
 	'helloworld-hello' => 'Hallo, mundo!',
+);
+
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'helloworld-desc' => 'Dëst ass e Beispill vun enger einfacher MediaWiki Erweiderung',
+	'helloworld' => 'HelloWorld',
+	'helloworld-hello' => 'Hallo Welt!',
 );
 
 /** Macedonian (Македонски)
