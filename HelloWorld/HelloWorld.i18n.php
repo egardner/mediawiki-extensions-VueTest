@@ -91,6 +91,15 @@ $messages['gl'] = array(
 	'helloworld-hello' => 'Ola mundo!',
 );
 
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'helloworld-desc' => 'זאת דוגמה להרחבה בסיסית של מדיה־ויקי',
+	'helloworld' => 'שלום־עולם',
+	'helloworld-hello' => 'שלום עולם!',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
