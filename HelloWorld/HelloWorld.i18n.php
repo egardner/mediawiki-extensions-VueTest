@@ -109,6 +109,15 @@ $messages['hi'] = array(
 	'helloworld-hello' => 'नमस्कार दुनिया',
 );
 
+/** Marathi (मराठी)
+ * @author Shantanoo
+ */
+$messages['mr'] = array(
+	'helloworld-desc' => 'हे मिडियाविकि विस्ताराचे उदाहरण आहे',
+	'helloworld' => 'नमस्कारविश्व',
+	'helloworld-hello' => 'नमस्कार विश्व!',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
