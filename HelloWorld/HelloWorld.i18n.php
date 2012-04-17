@@ -100,6 +100,15 @@ $messages['he'] = array(
 	'helloworld-hello' => 'שלום עולם!',
 );
 
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['hi'] = array(
+	'helloworld-desc' => 'यह मिडियाविकि विस्तार का उधाहरण है',
+	'helloworld' => 'नमस्कारदुनिया',
+	'helloworld-hello' => 'नमस्कार दुनिया',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
