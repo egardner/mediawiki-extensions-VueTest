@@ -100,8 +100,8 @@ $messages['he'] = array(
 	'helloworld-hello' => 'שלום עולם!',
 );
 
-/** Hebrew (עברית)
- * @author Amire80
+/** Hindi (हिन्दी)
+ * @author GKarunakar
  */
 $messages['hi'] = array(
 	'helloworld-desc' => 'यह मिडियाविकि विस्तार का उधाहरण है',
