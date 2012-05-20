@@ -46,6 +46,14 @@ $messages['de'] = array(
 	'helloworld-hello' => 'Hallo Welt!',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'helloworld' => 'MerhebaDınya',
+	'helloworld-hello' => 'Merheba Dınya!',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
@@ -109,15 +117,6 @@ $messages['hi'] = array(
 	'helloworld-hello' => 'नमस्कार दुनिया',
 );
 
-/** Marathi (मराठी)
- * @author Shantanoo
- */
-$messages['mr'] = array(
-	'helloworld-desc' => 'हे मिडियाविकि विस्ताराचे उदाहरण आहे',
-	'helloworld' => 'नमस्कारविश्व',
-	'helloworld-hello' => 'नमस्कार विश्व!',
-);
-
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
@@ -136,6 +135,15 @@ $messages['ia'] = array(
 	'helloworld-hello' => 'Hallo, mundo!',
 );
 
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'helloworld-desc' => 'MediaWiki 拡張機能の基本的な例',
+	'helloworld' => 'HelloWorld',
+	'helloworld-hello' => 'Hello World!',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -152,6 +160,15 @@ $messages['mk'] = array(
 	'helloworld-desc' => 'Ова е пример за прост додаток за МедијаВики',
 	'helloworld' => 'ЗдравоСвету',
 	'helloworld-hello' => 'Здраво свету!',
+);
+
+/** Marathi (मराठी)
+ * @author Shantanoo
+ */
+$messages['mr'] = array(
+	'helloworld-desc' => 'हे मिडियाविकि विस्ताराचे उदाहरण आहे',
+	'helloworld' => 'नमस्कारविश्व',
+	'helloworld-hello' => 'नमस्कार विश्व!',
 );
 
 /** Dutch (Nederlands)
