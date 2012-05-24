@@ -135,6 +135,15 @@ $messages['ia'] = array(
 	'helloworld-hello' => 'Hallo, mundo!',
 );
 
+/** Italian (Italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'helloworld-desc' => "Questo è un esempio di un'estensione semplice per MediaWiki",
+	'helloworld' => 'HelloWorld',
+	'helloworld-hello' => 'Ciao, mondo!',
+);
+
 /** Japanese (日本語)
  * @author Shirayuki
  */
