@@ -189,3 +189,12 @@ $messages['nl'] = array(
 	'helloworld-hello' => 'Hallo wereld!',
 );
 
+/** Polish (polski)
+ * @author Woytecr
+ */
+$messages['pl'] = array(
+	'helloworld-desc' => 'To jest przykład prostego rozszerzenia MediaWiki',
+	'helloworld' => 'WitajŚwiecie',
+	'helloworld-hello' => 'Witaj świecie!',
+);
+
