@@ -36,6 +36,14 @@ $messages['be-tarask'] = array(
 	'helloworld-hello' => 'Hello World!',
 );
 
+/** Breton (brezhoneg)
+ * @author Fulup
+ */
+$messages['br'] = array(
+	'helloworld' => 'HelloWorld',
+	'helloworld-hello' => 'Demat gouloù !',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  * @author Metalhead64
