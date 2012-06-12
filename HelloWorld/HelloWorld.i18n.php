@@ -206,3 +206,13 @@ $messages['pl'] = array(
 	'helloworld-hello' => 'Witaj świecie!',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Borichèt
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'helloworld-desc' => "Cost-sì a l'é n'esempi ëd n'estension ëd bas ëd MediaWIki",
+	'helloworld' => 'CereaMond',
+	'helloworld-hello' => 'Cerea Mond!',
+);
+
