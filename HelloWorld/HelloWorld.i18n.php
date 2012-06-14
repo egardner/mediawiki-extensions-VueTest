@@ -27,6 +27,15 @@ See http://www.mediawiki.org/wiki/Extension:HelloWorld',
 	'helloworld-hello' => 'A short message of greetings',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'helloworld-desc' => "Esti ye un exemplu d'una estensión básica de MediaWiki",
+	'helloworld' => 'HolaMundu',
+	'helloworld-hello' => '¡Hola mundu!',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
@@ -71,7 +80,7 @@ $messages['dsb'] = array(
 	'helloworld-hello' => 'Witaj swět!',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  */
 $messages['es'] = array(
@@ -89,7 +98,7 @@ $messages['fa'] = array(
 	'helloworld-hello' => 'سلام دنیا!',
 );
 
-/** French (Français)
+/** French (français)
  * @author Gomoko
  */
 $messages['fr'] = array(
@@ -134,7 +143,7 @@ $messages['hsb'] = array(
 	'helloworld-hello' => 'Witaj swět!',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -143,7 +152,7 @@ $messages['ia'] = array(
 	'helloworld-hello' => 'Hallo, mundo!',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
  * @author Beta16
  */
 $messages['it'] = array(
@@ -170,7 +179,7 @@ $messages['lb'] = array(
 	'helloworld-hello' => 'Hallo Welt!',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
