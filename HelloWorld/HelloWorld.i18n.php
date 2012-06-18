@@ -170,6 +170,15 @@ $messages['ja'] = array(
 	'helloworld-hello' => 'Hello World!',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'helloworld-desc' => 'E Beischpell för e eijfach Zohsazprojramm zom Medijawiki.',
+	'helloworld' => 'HalloWält',
+	'helloworld-hello' => 'Hallo Wält!',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
