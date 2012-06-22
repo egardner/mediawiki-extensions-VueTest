@@ -188,6 +188,15 @@ $messages['lb'] = array(
 	'helloworld-hello' => 'Hallo Welt!',
 );
 
+/** Lushai (Mizo ţawng)
+ * @author RMizo
+ */
+$messages['lus'] = array(
+	'helloworld-desc' => 'Hei hi MediaWiki zauhna bulthüm entirna a ni',
+	'helloworld' => 'HelloWorld',
+	'helloworld-hello' => 'Khai khai khai!',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
