@@ -36,7 +36,7 @@ $messages['ast'] = array(
 	'helloworld-hello' => '¡Hola mundu!',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -71,7 +71,7 @@ $messages['diq'] = array(
 	'helloworld-hello' => 'Merheba Dınya!',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -107,7 +107,7 @@ $messages['fr'] = array(
 	'helloworld-hello' => 'Salut tout le monde!',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -134,7 +134,7 @@ $messages['hi'] = array(
 	'helloworld-hello' => 'नमस्कार दुनिया',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
