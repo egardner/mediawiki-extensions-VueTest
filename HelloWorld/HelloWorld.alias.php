@@ -38,6 +38,11 @@ $specialPageAliases['diq'] = array(
 	'HelloWorld' => array( 'MerhebaDınya' ),
 );
 
+/** Galician (galego) */
+$specialPageAliases['gl'] = array(
+	'HelloWorld' => array( 'Ola_mundo' ),
+);
+
 /** Macedonian (македонски) */
 $specialPageAliases['mk'] = array(
 	'HelloWorld' => array( 'ЗдравоСвету' ),
