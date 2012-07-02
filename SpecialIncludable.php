@@ -1,5 +1,4 @@
 <?php
-if ( !defined( 'MEDIAWIKI' ) ) die();
 /**
  * A Special Page sample that can be included on a wikipage like
  * {{Special:Includable}} as well as being accessed on [[Special:Includable]]
@@ -22,21 +21,16 @@ $wgExtensionCredits['specialpage'][] = array(
 
 $wgSpecialPages['Includable'] = 'SpecialIncludable';
 
-// See FourFileTemplate how to do i18n
-//$wgExtensionMessagesFiles['Includable'] = dirname( __FILE__ ) . '/Includable.i18n.php';
-
 class SpecialIncludable extends IncludableSpecialPage {
-	/**
-		* Constructor
-		*/
-	function __construct() {
+
+	public function __construct() {
 		parent::__construct( 'Includable' );
 	}
 
 	/**
-	 * main()
+	 * Show the page
 	 */
-	function execute( $par = null ) {
+	public function execute( $par = null ) {
 		global $wgOut;
 		
 		if ( $this->including() )

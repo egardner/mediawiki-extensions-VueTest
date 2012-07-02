@@ -1,0 +1,11 @@
+/**
+ * Stylesheet for Foo in Example.
+ */
+
+.mw-example-foo {
+	display: block;
+	background-color: #f9f9f9;
+	border: 1px solid #eee;
+	padding: 0.5em 0.7em;
+	margin: 1em 0;
+}

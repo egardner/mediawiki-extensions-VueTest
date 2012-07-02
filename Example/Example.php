@@ -1,42 +1,98 @@
 <?php
 /**
- * This is an example extension. It doesn't actually do anything useful, but
- * can be copied to provide the basis for your own extension.
+ * Example extension - based on the Example.
+ *
+ * For more info see mediawiki.org/wiki/Extension:Example
+ *
+ * @file
+ * @ingroup Extensions
+ * @author John Doe, 2012
+ * @license GNU General Public Licence 2.0 or later
  */
-
-/** 
- * Prevent a user from accessing this file directly and provide a helpful 
- * message explaining how to install this extension.
- */
-if ( !defined( 'MEDIAWIKI' ) ) { 
-	if ( !defined( 'MEDIAWIKI' ) ) {
-    	echo <<<EOT
-To install the Example extension, put the following line in your 
-LocalSettings.php file: 
-require_once( "\$IP/extensions/Example/Example.php" );
-EOT;
-    	exit( 1 );
-	}
-}
-
-// Extension credits that will show up on Special:Version
-$wgExtensionCredits[ 'other' ][] = array(
+$wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Example',
-	'author' =>'Your Name Here', 
-	'url' => 'https://www.mediawiki.org/wiki/Extension:Example', 
-	'description' => 'This extension is an example extension',
-	'version'  => 1.0,
+	'author' => array(
+		'John Doe',
+	),
+	'version'  => '0.1.0',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:Example',
+	'descriptionmsg' => 'example-desc',
 );
 
-// Find the full directory path of this extension
-$current_dir = dirname( __FILE__ ) . DIRECTORY_SEPARATOR;
 
-// Autoload this extension's classes
-$wgAutoloadClasses[ 'SpecialExample' ] = $current_dir . 'Example.body.php';
+/* Setup */
 
-// Add the i18n message file
-$wgExtensionMessagesFiles[ 'Example' ] = $current_dir . 'Example.i18n.php';
+$dir = dirname( __FILE__ );
+$dirbasename = basename( $dir );
 
-// Tell MediaWiki about the special page
-$wgSpecialPages[ 'Example' ] = 'SpecialExample';
+// Register files
+$wgAutoloadClasses['ExampleHooks'] = $dir . '/Example.hooks.php';
+$wgAutoloadClasses['SpecialHelloWorld'] = $dir . '/specials/SpecialHelloWorld.php';
+$wgExtensionMessagesFiles['Example'] = $dir . '/Example.i18n.php';
+$wgExtensionMessagesFiles['ExampleAlias'] = $dir . '/Example.i18n.alias.php';
+$wgExtensionMessagesFiles['ExampleMagic'] = $dir . '/Example.i18n.magic.php';
+
+// Register hooks
+// See also http://www.mediawiki.org/wiki/Manual:Hooks
+$wgHooks['BeforePageDisplay'][] = 'ExampleHooks::onBeforePageDisplay';
+$wgHooks['ResourceLoaderGetConfigVars'][] = 'ExampleHooks::onResourceLoaderGetConfigVars';
+$wgHooks['ParserFirstCallInit'][] = 'ExampleHooks::onParserFirstCallInit';
+$wgHooks['MagicWordwgVariableIDs'][] = 'ExampleHooks::onRegisterMagicWords';
+$wgHooks['ParserGetVariableValueSwitch'][] = 'ExampleHooks::onParserGetVariableValueSwitch';
+
+// Register special pages
+// See also http://www.mediawiki.org/wiki/Manual:Special_pages
+$wgSpecialPages['HelloWorld'] = 'SpecialHelloWorld';
+$wgSpecialPageGroups['HelloWorld'] = 'other';
+
+// Register modules
+// See also http://www.mediawiki.org/wiki/Manual:$wgResourceModules
+$wgResourceModules['ext.Example.foo'] = array(
+	'scripts' => array(
+		'modules/ext.Example.foo.js',
+	),
+	'styles' => array(
+		'modules/ext.Example.foo.css',
+	),
+	'messages' => array(
+		'example-foo-title-loggedout',
+		'example-foo-title-user',
+	),
+	'dependencies' => array(
+		'mediawiki.util',
+		'mediawiki.user',
+		'mediawiki.Title',
+	),
+
+	'localBasePath' => $dir,
+	'remoteExtPath' => 'examples/' . $dirbasename,
+);
+
+$wgResourceModules['ext.Example.foo.init'] = array(
+	'scripts' => 'modules/ext.Example.foo.init.js',
+	'dependencies' => array(
+		'ext.Example.foo',
+	),
+
+	'localBasePath' => $dir,
+	'remoteExtPath' => 'examples/' . $dirbasename,
+);
+
+
+/* Configuration */
+
+// Enable Foo
+$wgExampleEnableFoo = true;
+
+// Stuff
+$wgExampleFooStuff = array(
+	'do' => 're',
+	'mi' => 'fa',
+	'so' => 'la',
+	'ti' => 'do',
+);
+
+// Value of {{MYWORD}} constant
+$wgExampleMyWord = 'Awesome';
+
