@@ -8,13 +8,13 @@
 
 class ExampleHooks {
 	/**
-	 * Add module to load queue of page views
+	 * Add welcome module to the load queue of all pages
 	 */
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
-		global $wgExampleEnableFoo;
+		global $wgExampleEnableWelcome;
 
-		if ( $wgExampleEnableFoo ) {
-			$out->addModules( 'ext.Example.foo.init' );
+		if ( $wgExampleEnableWelcome ) {
+			$out->addModules( 'ext.Example.welcome.init' );
 		}
 
 		// Always return true, indicating that parser initialization should
@@ -26,10 +26,11 @@ class ExampleHooks {
 	 * Expose configuration variables through mw.config in javascript.
 	 */
 	public static function onResourceLoaderGetConfigVars( &$vars ) {
-		global $wgExampleEnableFoo, $wgExampleFooStuff;
+		global $wgExampleEnableWelcome, $wgExampleWelcomeColorDefault, $wgExampleWelcomeColorDays;
 
-		if ( $wgExampleEnableFoo ) {
-			$vars['ExampleFooStuff'] = $wgExampleFooStuff;
+		if ( $wgExampleEnableWelcome ) {
+			$vars['wgExampleWelcomeColorDefault'] = $wgExampleWelcomeColorDefault;
+			$vars['wgExampleWelcomeColorDays'] = $wgExampleWelcomeColorDays;
 		}
 
 		return true;

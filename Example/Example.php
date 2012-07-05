@@ -1,36 +1,34 @@
 <?php
 /**
- * Example extension - based on the Example.
+ * Example extension - based on the BoilerPlate
  *
  * For more info see mediawiki.org/wiki/Extension:Example
  *
- * You should add a nice comment explaining what the file contains and
- * what it is for. MediaWiki core uses the doxygen documentation engine
- * so you can add various tags to complement your comment. See the online
- * documentation at http://www.stack.nl/~dimitri/doxygen/manual.html
+ * You should add a brief comment explaining what the file contains and
+ * what it is for. MediaWiki core uses the doxygen documentation syntax,
+ * you're recommended to use those tags to complement your comment.
+ * See the online documentation at:
+ * http://www.stack.nl/~dimitri/doxygen/manual.html
  *
- * Here are some tags, most of them are optionals though:
+ * Here are commonly used tags, most of them are optional, though:
  *
- * First tag this document block as describing the file:
+ * First we tag this document block as describing the entire file (as opposed
+ * to a variable, class or function):
  * @file
  *
- * We regroup all extensions documentation in the obvious `Extensions`
- * group of documentation:
+ * We regroup all extensions documentation in the group named "Extensions":
  * @ingroup Extensions
  *
- * The author would let everyone know who wrote the code, if you want to
- * mention several authors, add a second line.
- * @author Jane Roe
- * @author John Doe
- *
- * Eventually the date range, gives a hint about how fresh the code is:
- * @date 2011-2012
+ * The author would let everyone know who wrote the code, if there is more
+ * than one author, add multiple author annotations:
+ * @author Jane Doe
+ * @author George Foo
  *
  * To mention the file version in the documentation:
  * @version 1.0
  *
  * The license governing the extension code:
- * @copyright GNU General Public Licence 2.0 or later
+ * @license GNU General Public Licence 2.0 or later
  */
 
 /**
@@ -49,8 +47,8 @@ $wgExtensionCredits['other'][] = array(
 	// mentionning, you can use the special case '...' to output a localised
 	// message 'and others...'.
 	'author' => array(
+		'Jane Doe',
 		'George Foo',
-		'Jane Bar',
 		'...'
 	),
 
@@ -103,16 +101,18 @@ $wgSpecialPageGroups['HelloWorld'] = 'other';
 // See also http://www.mediawiki.org/wiki/Manual:$wgResourceModules
 // ResourceLoader modules are the de facto standard way to easily
 // load JavaScript and CSS files to the client.
-$wgResourceModules['ext.Example.foo'] = array(
+$wgResourceModules['ext.Example.welcome'] = array(
 	'scripts' => array(
-		'modules/ext.Example.foo.js',
+		'modules/ext.Example.welcome.js',
 	),
 	'styles' => array(
-		'modules/ext.Example.foo.css',
+		'modules/ext.Example.welcome.css',
 	),
 	'messages' => array(
-		'example-foo-title-loggedout',
-		'example-foo-title-user',
+		'example-welcome-title-loggedout',
+		'example-welcome-title-user',
+		'example-welcome-color-label',
+		'example-welcome-color-value',
 	),
 	'dependencies' => array(
 		'mediawiki.util',
@@ -124,10 +124,10 @@ $wgResourceModules['ext.Example.foo'] = array(
 	'remoteExtPath' => 'examples/' . $dirbasename,
 );
 
-$wgResourceModules['ext.Example.foo.init'] = array(
-	'scripts' => 'modules/ext.Example.foo.init.js',
+$wgResourceModules['ext.Example.welcome.init'] = array(
+	'scripts' => 'modules/ext.Example.welcome.init.js',
 	'dependencies' => array(
-		'ext.Example.foo',
+		'ext.Example.welcome',
 	),
 
 	'localBasePath' => $dir,
@@ -142,16 +142,19 @@ $wgResourceModules['ext.Example.foo.init'] = array(
  * The entire variable name should use "lowerCamelCase".
  */
 
-// Enable Foo
-// Example of 'BoilerPlate' global setting to enable the 'Foo' feature:
-$wgExampleEnableFoo = true;
+// Enable Welcome
+// Example of a configuration setting to enable the 'Welcome' feature:
+$wgExampleEnableWelcome = true;
 
-// Stuff
-$wgExampleFooStuff = array(
-	'do' => 're',
-	'mi' => 'fa',
-	'so' => 'la',
-	'ti' => 'do',
+// Color map for the Welcome feature
+$wgExampleWelcomeColorDefault = '#eee';
+// Days not defined here fall back to the default
+$wgExampleWelcomeColorDays = array(
+	'Monday' => 'orange',
+	'Tuesday' => 'blue',
+	'Wednesday' => 'green',
+	'Thursday' => 'red',
+	'Friday' => 'yellow',
 );
 
 // Value of {{MYWORD}} constant
