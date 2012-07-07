@@ -243,3 +243,12 @@ $messages['pms'] = array(
 	'helloworld-hello' => 'Cerea Mond!',
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'helloworld-desc' => 'Isa itong halimbawa ng isang saligang dugtong ng MediaWiki',
+	'helloworld' => 'KumustaKaDaigdig',
+	'helloworld-hello' => 'Kumusta Ka Daigdig!',
+);
+
