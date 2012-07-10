@@ -9,6 +9,7 @@
  * @author John Doe, 2012
  * @license GNU General Public Licence 2.0 or later
  */
+
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Example',
@@ -19,7 +20,6 @@ $wgExtensionCredits['other'][] = array(
 	'url' => 'https://www.mediawiki.org/wiki/Extension:Example',
 	'descriptionmsg' => 'example-desc',
 );
-
 
 /* Setup */
 
@@ -79,7 +79,6 @@ $wgResourceModules['ext.Example.foo.init'] = array(
 	'remoteExtPath' => 'examples/' . $dirbasename,
 );
 
-
 /* Configuration */
 
 // Enable Foo
@@ -95,4 +94,3 @@ $wgExampleFooStuff = array(
 
 // Value of {{MYWORD}} constant
 $wgExampleMyWord = 'Awesome';
-

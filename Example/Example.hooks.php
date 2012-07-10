@@ -7,7 +7,6 @@
  */
 
 class ExampleHooks {
-
 	/**
 	 * Add module to load queue of page views
 	 */
@@ -140,5 +139,4 @@ class ExampleHooks {
 
 		return '<pre>Showme Function: ' . htmlspecialchars( FormatJson::encode( $showme, /*prettyPrint=*/true ) ) . '</pre>';
 	}
-
 }

@@ -12,7 +12,7 @@ $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Content action hook',
 	'author' => 'Ævar Arnfjörð Bjarmason',
-	'description' => 'Adds a new tab to each page',
+	'descriptionmsg' => 'contentaction-desc',
 );
 
 $wgHooks['UnknownAction'][] = 'wfAddactActionHook';
@@ -21,14 +21,12 @@ $wgHooks['SkinTemplateNavigation'][] = 'wfAddactionContentHook';
 $wgExtensionMessagesFiles['ContentAction'] = dirname( __FILE__ ) . '/ContentAction.i18n.php';
 
 function wfAddActionContentHook( $skin, &$content_actions ) {
-	global $wgRequest;
-	
-	$action = $wgRequest->getText( 'action' );
+	$action = $skin->getRequest->getText( 'action' );
 
 	if ( $skin->getTitle()->getNamespace() != NS_SPECIAL ) {
 		$content_actions['actions']['myact'] = array(
 			'class' => $action === 'myact' ? 'selected' : false,
-			'text' => wfMsg( 'myact' ),
+			'text' => wfMessage( 'contentaction-myact' )->text(),
 			'href' => $skin->getTitle()->getLocalUrl( 'action=myact' )
 		);
 	}
@@ -37,12 +35,12 @@ function wfAddActionContentHook( $skin, &$content_actions ) {
 }
 
 function wfAddactActionHook( $action, $article ) {
-	global $wgOut;
-	
 	$title = $article->getTitle();
-	
+
 	if ( $action === 'myact' ) {
-		$wgOut->addWikiText( 'The page name is ' . $title->getText() . ' and you are ' . $article->getUserText() );
+		$article->getContext()->getOutput()->addWikiText(
+			'The page name is ' . $title->getText() . ' and you are ' . $article->getUserText()
+		);
 		return false;
 	}
 

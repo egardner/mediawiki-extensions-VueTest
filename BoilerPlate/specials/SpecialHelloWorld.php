@@ -7,7 +7,6 @@
  */
 
 class SpecialHelloWorld extends SpecialPage {
-
 	public function __construct() {
 		parent::__construct( 'HelloWorld' );
 	}
@@ -24,5 +23,4 @@ class SpecialHelloWorld extends SpecialPage {
 
 		$out->addWikiMsg( 'boilerplate-helloworld-intro' );
 	}
-
 }

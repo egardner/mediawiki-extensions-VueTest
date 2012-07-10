@@ -8,5 +8,6 @@
 $messages = array();
 
 $messages['en'] = array(
-	'myact' => 'My action',
+	'contentaction-desc' => 'Adds a new tab to each page',
+	'contentaction-myact' => 'My action',
 );
