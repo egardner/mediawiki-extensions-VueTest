@@ -15,9 +15,9 @@ $messages['en'] = array(
 	'boilerplate-i18n-welcome' => 'Welcome to the localization file of the BoilerPlate extension.',
 );
 
-/** Message documentation (Message documentation)
- */
+/** Message documentation (Message documentation) */
 $messages['qqq'] = array(
 	'boilerplate-desc' => '{{desc}}',
 	'boilerplate-i18n-welcome' => 'Used to greet the user when reading the .i18n.php file.',
 );
+
