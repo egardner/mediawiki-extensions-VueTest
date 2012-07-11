@@ -17,6 +17,8 @@ class ExampleHooks {
 			$out->addModules( 'ext.Example.foo.init' );
 		}
 
+		// Always return true, indicating that parser initialization should
+		// continue normally.
 		return true;
 	}
 
@@ -51,8 +53,6 @@ class ExampleHooks {
 		//  {{#showme: hello | hi | there }}
 		$parser->setFunctionHook( 'showme', 'ExampleHooks::parserFunctionShowme' );
 
-		// Always return true, indicating that parser initialization should
-		// continue normally.
 		return true;
 	}
 
