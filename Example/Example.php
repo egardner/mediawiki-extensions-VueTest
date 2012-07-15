@@ -92,6 +92,7 @@ $wgHooks['ResourceLoaderGetConfigVars'][] = 'ExampleHooks::onResourceLoaderGetCo
 $wgHooks['ParserFirstCallInit'][] = 'ExampleHooks::onParserFirstCallInit';
 $wgHooks['MagicWordwgVariableIDs'][] = 'ExampleHooks::onRegisterMagicWords';
 $wgHooks['ParserGetVariableValueSwitch'][] = 'ExampleHooks::onParserGetVariableValueSwitch';
+$wgHooks['LoadExtensionSchemaUpdates'][] = 'ExampleHooks::onLoadExtensionSchemaUpdates';
 
 // Register special pages
 // See also http://www.mediawiki.org/wiki/Manual:Special_pages

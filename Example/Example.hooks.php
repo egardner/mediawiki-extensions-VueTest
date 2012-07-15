@@ -75,6 +75,17 @@ class ExampleHooks {
 	}
 
 	/**
+	 * This registers our database schema update(s)
+	 */
+	public static function onLoadExtensionSchemaUpdates( $updater ) {
+		$dir = dirname( __FILE__ );
+
+		$updater->addExtensionTable( 'example_note', "$dir/sql/add-example_note.sql" );
+
+		return true;
+	}
+
+	/**
 	 * Parser magic word handler for {{MYWORD}}
 	 *
 	 * @return string: Wikitext to be rendered in the page.
