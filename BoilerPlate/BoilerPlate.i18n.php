@@ -87,9 +87,19 @@ $messages['mk'] = array(
 
 /** Dutch (Nederlands)
  * @author AvatarTeam
+ * @author SPQRobin
  */
 $messages['nl'] = array(
 	'boilerplate-desc' => 'Dit is een voorbeeld van de uitbreiding',
+	'boilerplate-i18n-welcome' => 'Welkom bij het lokalisatiebestand van de BoilerPlate-uitbreiding.',
+);
+
+/** Portuguese (português)
+ * @author Hamilton Abreu
+ */
+$messages['pt'] = array(
+	'boilerplate-desc' => 'Esta é uma extensão exemplificativa',
+	'boilerplate-i18n-welcome' => 'Bem-vindo(a) ao ficheiro de localização da extensão exemplificativa BoilerPlate.',
 );
 
 /** Tagalog (Tagalog)
