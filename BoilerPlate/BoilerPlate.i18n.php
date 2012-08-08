@@ -77,6 +77,14 @@ $messages['it'] = array(
 	'boilerplate-i18n-welcome' => "Benvenuti al file di localizzazione dell'estensione BoilerPlate.",
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'boilerplate-desc' => '예제 확장 기능입니다',
+	'boilerplate-i18n-welcome' => '상용구 확장 기능의 지역화 파일에 온 것을 환영합니다.',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
