@@ -118,3 +118,10 @@ $messages['tl'] = array(
 	'boilerplate-i18n-welcome' => 'Maligayang pagdating sa talaksan ng lokalisasyon ng dugtong na Platong Pakuluan.',
 );
 
+/** Traditional Chinese (‪中文（繁體）‬)
+ * @author Simon Shek
+ */
+$messages['zh-hant'] = array(
+	'boilerplate-desc' => '這是一個示例擴展',
+);
+
