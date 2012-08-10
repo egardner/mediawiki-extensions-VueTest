@@ -21,6 +21,14 @@ $messages['qqq'] = array(
 	'boilerplate-i18n-welcome' => 'Used to greet the user when reading the .i18n.php file.',
 );
 
+/** Danish (dansk)
+ * @author Hylle
+ */
+$messages['da'] = array(
+	'boilerplate-desc' => 'Dette er et eksempel på en udvidelse',
+	'boilerplate-i18n-welcome' => 'Velkommen til lokaliseringsdelen af BoilerPlate udvidelsen.',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
