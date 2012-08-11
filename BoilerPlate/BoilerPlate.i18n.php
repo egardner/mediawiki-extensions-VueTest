@@ -21,6 +21,14 @@ $messages['qqq'] = array(
 	'boilerplate-i18n-welcome' => 'Used to greet the user when reading the .i18n.php file.',
 );
 
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+ * @author Wizardist
+ */
+$messages['be-tarask'] = array(
+	'boilerplate-desc' => 'Гэта прыклад пашырэньня',
+	'boilerplate-i18n-welcome' => 'Вітаем у лякалізацыйным файле пашырэньня BoilerPlate.',
+);
+
 /** Danish (dansk)
  * @author Hylle
  */
@@ -33,8 +41,8 @@ $messages['da'] = array(
  * @author Kghbln
  */
 $messages['de'] = array(
-	'boilerplate-desc' => 'Ist das Beispiel einer einfachen MediaWiki-Erweiterung',
-	'boilerplate-i18n-welcome' => 'Willkommen bei der Lokalisierungs- und Internationalisierungsdatei der Softwareerweiterung BoilerPlate.',
+	'boilerplate-desc' => 'Veranschaulicht beispielhaft eine einfache MediaWiki-Erweiterung',
+	'boilerplate-i18n-welcome' => 'Willkommen bei der Lokalisierungs- und Internationalisierungsdatei der Programmerweiterung BoilerPlate.',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -43,6 +51,14 @@ $messages['de'] = array(
 $messages['dsb'] = array(
 	'boilerplate-desc' => 'To jo pśikładowe rozšyrjenje',
 	'boilerplate-i18n-welcome' => 'Witaj k localizaciskej dataji rozšyrjenja BoilerPlate.',
+);
+
+/** Spanish (español)
+ * @author Armando-Martin
+ */
+$messages['es'] = array(
+	'boilerplate-desc' => 'Esta es una extensión de ejemplo',
+	'boilerplate-i18n-welcome' => 'Bienvenido al archivo de localización de la extensión de BoilerPlate.',
 );
 
 /** French (français)
@@ -59,6 +75,13 @@ $messages['fr'] = array(
 $messages['gl'] = array(
 	'boilerplate-desc' => 'Esta é unha extensión de exemplo',
 	'boilerplate-i18n-welcome' => 'Dámoslle a benvida ao ficheiro de localización da extensión BoilerPlate.',
+);
+
+/** Hebrew (עברית)
+ * @author Inkbug
+ */
+$messages['he'] = array(
+	'boilerplate-desc' => 'זאת היא הרחבה לדוגמא',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -93,6 +116,14 @@ $messages['ko'] = array(
 	'boilerplate-i18n-welcome' => '상용구 확장 기능의 지역화 파일에 온 것을 환영합니다.',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'boilerplate-desc' => 'Dat heh es e eijfach Beischpell för e Zohsazprojramm.',
+	'boilerplate-i18n-welcome' => 'Wellkumme bei de Övversäzonge för dat Beischpell för e Zohsazprojramm heh.',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
@@ -116,6 +147,14 @@ $messages['nl'] = array(
 $messages['pt'] = array(
 	'boilerplate-desc' => 'Esta é uma extensão exemplificativa',
 	'boilerplate-i18n-welcome' => 'Bem-vindo(a) ao ficheiro de localização da extensão exemplificativa BoilerPlate.',
+);
+
+/** Russian (русский)
+ * @author DCamer
+ */
+$messages['ru'] = array(
+	'boilerplate-desc' => 'Это пример расширения',
+	'boilerplate-i18n-welcome' => 'Добро пожаловать в файл локализации расширения BoilerPlate.',
 );
 
 /** Tagalog (Tagalog)
