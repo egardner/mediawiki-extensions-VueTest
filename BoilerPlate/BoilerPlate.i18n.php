@@ -78,10 +78,12 @@ $messages['gl'] = array(
 );
 
 /** Hebrew (עברית)
+ * @author Amire80
  * @author Inkbug
  */
 $messages['he'] = array(
 	'boilerplate-desc' => 'זאת היא הרחבה לדוגמא',
+	'boilerplate-i18n-welcome' => 'ברוכים הבאים לקובץ התרגום של ההרחבה BoilerPlate.',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -155,6 +157,13 @@ $messages['pt'] = array(
 $messages['ru'] = array(
 	'boilerplate-desc' => 'Это пример расширения',
 	'boilerplate-i18n-welcome' => 'Добро пожаловать в файл локализации расширения BoilerPlate.',
+);
+
+/** Tamil (தமிழ்)
+ * @author Karthi.dr
+ */
+$messages['ta'] = array(
+	'boilerplate-desc' => 'இது ஓர் எடுத்துக்காட்டு நீட்சி',
 );
 
 /** Tagalog (Tagalog)
