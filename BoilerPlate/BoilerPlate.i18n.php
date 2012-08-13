@@ -159,6 +159,13 @@ $messages['ru'] = array(
 	'boilerplate-i18n-welcome' => 'Добро пожаловать в файл локализации расширения BoilerPlate.',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'boilerplate-desc' => 'මෙය නිදර්ශන විස්තිර්ණයකි',
+);
+
 /** Tamil (தமிழ்)
  * @author Karthi.dr
  */
