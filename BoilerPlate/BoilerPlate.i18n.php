@@ -134,6 +134,14 @@ $messages['mk'] = array(
 	'boilerplate-i18n-welcome' => 'Добредојдовте на податотеката за локализација на додатокот ПодготвенТекст (BoilerPlate).',
 );
 
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'boilerplate-desc' => "Din hija eżempju ta' estensjoni",
+	'boilerplate-i18n-welcome' => "Merħba fil-fajl ta' lokalizzazzjoni tal-estensjoni BoilerPlate.",
+);
+
 /** Dutch (Nederlands)
  * @author AvatarTeam
  * @author SPQRobin
