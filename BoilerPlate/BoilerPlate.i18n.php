@@ -110,6 +110,14 @@ $messages['it'] = array(
 	'boilerplate-i18n-welcome' => "Benvenuti al file di localizzazione dell'estensione BoilerPlate.",
 );
 
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'boilerplate-desc' => 'これは拡張機能の例です',
+	'boilerplate-i18n-welcome' => 'BoilerPlate 拡張機能の地域化ファイルにようこそ。',
+);
+
 /** Korean (한국어)
  * @author 아라
  */
@@ -149,6 +157,14 @@ $messages['mt'] = array(
 $messages['nl'] = array(
 	'boilerplate-desc' => 'Dit is een voorbeeld van de uitbreiding',
 	'boilerplate-i18n-welcome' => 'Welkom bij het lokalisatiebestand van de BoilerPlate-uitbreiding.',
+);
+
+/** Polish (polski)
+ * @author BeginaFelicysym
+ */
+$messages['pl'] = array(
+	'boilerplate-desc' => 'To jest rozszerzenie przykładowe',
+	'boilerplate-i18n-welcome' => 'Witamy w lokalizacji pliku rozszerzenia szablonowego BoilerPlate.',
 );
 
 /** Portuguese (português)
