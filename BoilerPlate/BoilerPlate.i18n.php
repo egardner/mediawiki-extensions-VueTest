@@ -167,6 +167,14 @@ $messages['pl'] = array(
 	'boilerplate-i18n-welcome' => 'Witamy w lokalizacji pliku rozszerzenia szablonowego BoilerPlate.',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'boilerplate-desc' => "Sta-sì a l'é n'estension d'esempi",
+	'boilerplate-i18n-welcome' => "Bin-ëvnù a l'archivi ëd localisassion ëd l'estension BoilerPlate.",
+);
+
 /** Portuguese (português)
  * @author Hamilton Abreu
  */
