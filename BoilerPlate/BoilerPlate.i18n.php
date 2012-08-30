@@ -168,11 +168,12 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'boilerplate-desc' => "Sta-sì a l'é n'estension d'esempi",
-	'boilerplate-i18n-welcome' => "Bin-ëvnù a l'archivi ëd localisassion ëd l'estension BoilerPlate.",
+	'boilerplate-desc' => "Cost a l'é n'esempi d'estension",
+	'boilerplate-i18n-welcome' => "Bin-ëvnù ant l'archivi ëd localisassion ëd l'estension BoilerPlate.",
 );
 
 /** Portuguese (português)
