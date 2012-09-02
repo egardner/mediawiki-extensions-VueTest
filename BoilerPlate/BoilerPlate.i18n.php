@@ -21,6 +21,14 @@ $messages['qqq'] = array(
 	'boilerplate-i18n-welcome' => 'Used to greet the user when reading the .i18n.php file.',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'boilerplate-desc' => "Esta ye una estensión d'exemplu",
+	'boilerplate-i18n-welcome' => 'Bienveníu al ficheru de llocalización de la estensión BoilerPlate.',
+);
+
 /** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
