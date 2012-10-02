@@ -29,7 +29,7 @@ $messages['ast'] = array(
 	'boilerplate-i18n-welcome' => 'Bienveníu al ficheru de llocalización de la estensión BoilerPlate.',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -227,7 +227,7 @@ $messages['zh-hans'] = array(
 	'boilerplate-desc' => '这是一个示例扩展',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
