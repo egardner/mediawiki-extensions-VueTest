@@ -15,7 +15,8 @@ $messages['en'] = array(
 	'boilerplate-i18n-welcome' => 'Welcome to the localization file of the BoilerPlate extension.',
 );
 
-/** Message documentation (Message documentation) */
+/** Message documentation (Message documentation)
+ */
 $messages['qqq'] = array(
 	'boilerplate-desc' => '{{desc}}',
 	'boilerplate-i18n-welcome' => 'Used to greet the user when reading the .i18n.php file.',
@@ -222,7 +223,8 @@ $messages['tl'] = array(
 	'boilerplate-i18n-welcome' => 'Maligayang pagdating sa talaksan ng lokalisasyon ng dugtong na Platong Pakuluan.',
 );
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Simplified Chinese (中文（简体）‎)
+ */
 $messages['zh-hans'] = array(
 	'boilerplate-desc' => '这是一个示例扩展',
 );
@@ -233,4 +235,3 @@ $messages['zh-hans'] = array(
 $messages['zh-hant'] = array(
 	'boilerplate-desc' => '這是一個示例擴展',
 );
-
