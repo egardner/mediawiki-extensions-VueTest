@@ -159,6 +159,13 @@ $messages['mt'] = array(
 	'boilerplate-i18n-welcome' => "Merħba fil-fajl ta' lokalizzazzjoni tal-estensjoni BoilerPlate.",
 );
 
+/** Norwegian Bokmål (norsk (bokmål)‎)
+ */
+$messages['nb'] = array(
+	'boilerplate-desc' => 'Dette er en eksempelutvidelse',
+	'boilerplate-i18n-welcome' => 'Velkommen til lokaliseringsfilen for utvidelsen BoilerPlate',
+);
+
 /** Dutch (Nederlands)
  * @author AvatarTeam
  * @author SPQRobin
