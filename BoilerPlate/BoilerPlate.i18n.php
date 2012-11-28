@@ -230,6 +230,14 @@ $messages['tl'] = array(
 	'boilerplate-i18n-welcome' => 'Maligayang pagdating sa talaksan ng lokalisasyon ng dugtong na Platong Pakuluan.',
 );
 
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'boilerplate-desc' => 'Це приклад розширення',
+	'boilerplate-i18n-welcome' => 'Ласкаво просимо до файлу локалізації  розширення BoilerPlate extension.',
+);
+
 /** Simplified Chinese (中文（简体）‎)
  */
 $messages['zh-hans'] = array(
