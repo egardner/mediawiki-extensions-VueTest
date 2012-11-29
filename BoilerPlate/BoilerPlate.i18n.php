@@ -70,6 +70,13 @@ $messages['es'] = array(
 	'boilerplate-i18n-welcome' => 'Bienvenido al archivo de localización de la extensión de BoilerPlate.',
 );
 
+/** Finnish (suomi)
+ * @author Nedergard
+ */
+$messages['fi'] = array(
+	'boilerplate-desc' => 'Tämä on esimerkki laajennuksesta',
+);
+
 /** French (français)
  * @author Gomoko
  */
