@@ -158,6 +158,14 @@ $messages['mk'] = array(
 	'boilerplate-i18n-welcome' => 'Добредојдовте на податотеката за локализација на додатокот ПодготвенТекст (BoilerPlate).',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'boilerplate-desc' => 'Ini ialah sambungan contoh',
+	'boilerplate-i18n-welcome' => 'Selamat datang ke fail penyetempatan sambungan BoilerPlate.',
+);
+
 /** Maltese (Malti)
  * @author Chrisportelli
  */
