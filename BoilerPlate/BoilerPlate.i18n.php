@@ -72,9 +72,10 @@ $messages['es'] = array(
 
 /** Finnish (suomi)
  * @author Nedergard
+ * @author Nike
  */
 $messages['fi'] = array(
-	'boilerplate-desc' => 'Tämä on esimerkki laajennuksesta',
+	'boilerplate-desc' => 'Tämä on esimerkkilaajennus',
 );
 
 /** French (français)
