@@ -16,9 +16,10 @@ $messages['en'] = array(
 );
 
 /** Message documentation (Message documentation)
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'boilerplate-desc' => '{{desc}}',
+	'boilerplate-desc' => '{{desc|name=Boilerplate|url=http://www.mediawiki.org/wiki/Extension:Boilerplate}}',
 	'boilerplate-i18n-welcome' => 'Used to greet the user when reading the .i18n.php file.',
 );
 
