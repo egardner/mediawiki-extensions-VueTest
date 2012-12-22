@@ -120,6 +120,13 @@ $messages['ia'] = array(
 	'boilerplate-i18n-welcome' => 'Benvenite al file de localisation del extension "BoilerPlate" (modello).',
 );
 
+/** Indonesian (Bahasa Indonesia)
+ * @author Farras
+ */
+$messages['id'] = array(
+	'boilerplate-desc' => 'Ini adalah contoh ekstensi',
+);
+
 /** Italian (italiano)
  * @author Beta16
  */
