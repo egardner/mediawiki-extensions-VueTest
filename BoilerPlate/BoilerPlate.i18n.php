@@ -39,6 +39,13 @@ $messages['be-tarask'] = array(
 	'boilerplate-i18n-welcome' => 'Вітаем у лякалізацыйным файле пашырэньня BoilerPlate.',
 );
 
+/** Catalan (català)
+ * @author Arnaugir
+ */
+$messages['ca'] = array(
+	'boilerplate-desc' => "Aquesta és una extensió d'exemple",
+);
+
 /** Danish (dansk)
  * @author Hylle
  */
@@ -61,6 +68,13 @@ $messages['de'] = array(
 $messages['dsb'] = array(
 	'boilerplate-desc' => 'To jo pśikładowe rozšyrjenje',
 	'boilerplate-i18n-welcome' => 'Witaj k localizaciskej dataji rozšyrjenja BoilerPlate.',
+);
+
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'boilerplate-desc' => 'Jen ekzempla programero',
 );
 
 /** Spanish (español)
@@ -125,6 +139,7 @@ $messages['ia'] = array(
  */
 $messages['id'] = array(
 	'boilerplate-desc' => 'Ini adalah contoh ekstensi',
+	'boilerplate-i18n-welcome' => 'Selamat datang di berkas lokalisasi ekstensi BoilerPlate.',
 );
 
 /** Italian (italiano)
