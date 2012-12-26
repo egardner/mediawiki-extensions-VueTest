@@ -88,9 +88,11 @@ $messages['es'] = array(
 /** Finnish (suomi)
  * @author Nedergard
  * @author Nike
+ * @author VezonThunder
  */
 $messages['fi'] = array(
 	'boilerplate-desc' => 'Tämä on esimerkkilaajennus',
+	'boilerplate-i18n-welcome' => 'Tervetuloa BoilerPlate-laajennuksen lokalisointitiedostoon.',
 );
 
 /** French (français)
