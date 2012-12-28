@@ -128,6 +128,14 @@ $messages['hsb'] = array(
 	'boilerplate-i18n-welcome' => 'Witaj k localizaciskej dataji rozšěrjenja BoilerPlate.',
 );
 
+/** Hungarian (magyar)
+ * @author Dj
+ */
+$messages['hu'] = array(
+	'boilerplate-desc' => 'Ez egy példa kiterjesztés',
+	'boilerplate-i18n-welcome' => 'Üdvözlünk a BoilerPlate kiterjesztés lokalizációs fájljában.',
+);
+
 /** Interlingua (interlingua)
  * @author McDutchie
  */
