@@ -184,6 +184,14 @@ $messages['ksh'] = array(
 	'boilerplate-i18n-welcome' => 'Wellkumme bei de Övversäzonge för dat Beischpell för e Zohsazprojramm heh.',
 );
 
+/** Basa Banyumasan (Basa Banyumasan)
+ * @author StefanusRA
+ */
+$messages['map-bms'] = array(
+	'boilerplate-desc' => 'Kiye kuwe anu conto ekstensi',
+	'boilerplate-i18n-welcome' => 'Sugeng teka ming berkas lokalisasi ekstensi BoilerPlate.',
+);
+
 /** Macedonian (македонски)
  * @author Bjankuloski06
  */
