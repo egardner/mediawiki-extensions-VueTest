@@ -103,6 +103,13 @@ $messages['fr'] = array(
 	'boilerplate-i18n-welcome' => "Bienvenue dans le fichier de localisation de l'extension passepartout.",
 );
 
+/** Franco-Provençal (arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'boilerplate-desc' => 'O est un ègzemplo d’èxtension',
+);
+
 /** Galician (galego)
  * @author Toliño
  */
