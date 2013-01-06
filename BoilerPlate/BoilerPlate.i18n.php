@@ -264,6 +264,14 @@ $messages['pt'] = array(
 	'boilerplate-i18n-welcome' => 'Bem-vindo(a) ao ficheiro de localização da extensão exemplificativa BoilerPlate.',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'boilerplate-desc' => "Queste jè 'n'estenzione de esembie",
+	'boilerplate-i18n-welcome' => "Bovègne jndr'à 'u file de localizzazzione de l'estenzione BoilerPlate.",
+);
+
 /** Russian (русский)
  * @author DCamer
  */
