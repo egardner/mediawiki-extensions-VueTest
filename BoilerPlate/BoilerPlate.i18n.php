@@ -311,9 +311,11 @@ $messages['uk'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Hydra
  */
 $messages['zh-hans'] = array(
 	'boilerplate-desc' => '这是一个示例扩展',
+	'boilerplate-i18n-welcome' => '欢迎来到 BoilerPlate 扩展的翻译文件。',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
