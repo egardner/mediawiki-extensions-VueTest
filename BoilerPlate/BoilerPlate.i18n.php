@@ -70,6 +70,13 @@ $messages['dsb'] = array(
 	'boilerplate-i18n-welcome' => 'Witaj k localizaciskej dataji rozšyrjenja BoilerPlate.',
 );
 
+/** British English (British English)
+ * @author Lloffiwr
+ */
+$messages['en-gb'] = array(
+	'boilerplate-i18n-welcome' => 'Welcome to the localisation file of the BoilerPlate extension.',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
