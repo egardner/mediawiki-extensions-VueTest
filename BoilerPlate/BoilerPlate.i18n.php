@@ -39,6 +39,13 @@ $messages['be-tarask'] = array(
 	'boilerplate-i18n-welcome' => 'Вітаем у лякалізацыйным файле пашырэньня BoilerPlate.',
 );
 
+/** Breton (brezhoneg)
+ * @author Fohanno
+ */
+$messages['br'] = array(
+	'boilerplate-desc' => 'Setu amañ ur skouer astenn',
+);
+
 /** Catalan (català)
  * @author Arnaugir
  */
