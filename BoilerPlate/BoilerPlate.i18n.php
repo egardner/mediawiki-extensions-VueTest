@@ -333,8 +333,10 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Kevinhksouth
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
 	'boilerplate-desc' => '這是一個示例擴展',
+	'boilerplate-i18n-welcome' => '歡迎使用 BoilerPlate 擴充套件的本地語系檔案。',
 );
