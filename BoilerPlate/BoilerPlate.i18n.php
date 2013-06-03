@@ -237,7 +237,7 @@ $messages['mt'] = array(
 	'boilerplate-i18n-welcome' => "Merħba fil-fajl ta' lokalizzazzjoni tal-estensjoni BoilerPlate.",
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  */
 $messages['nb'] = array(
 	'boilerplate-desc' => 'Dette er en eksempelutvidelse',
