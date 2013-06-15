@@ -301,6 +301,13 @@ $messages['si'] = array(
 	'boilerplate-desc' => 'මෙය නිදර්ශන විස්තිර්ණයකි',
 );
 
+/** Swedish (svenska)
+ * @author Jopparn
+ */
+$messages['sv'] = array(
+	'boilerplate-desc' => 'Detta är ett exempel-tillägg',
+);
+
 /** Tamil (தமிழ்)
  * @author Karthi.dr
  */
