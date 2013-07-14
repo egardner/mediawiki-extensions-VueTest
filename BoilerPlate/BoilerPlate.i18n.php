@@ -205,6 +205,14 @@ $messages['ksh'] = array(
 	'boilerplate-i18n-welcome' => 'Wellkumme bei de Övversäzonge för dat Beischpell för e Zohsazprojramm heh.',
 );
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+$messages['lb'] = array(
+	'boilerplate-desc' => 'Dëst ass e Beispill vun enger Erweiderung',
+	'boilerplate-i18n-welcome' => 'Wëllkomm beim Lokalisatiounsfichier vun der BoilerPlate Erweiderung',
+);
+
 /** Basa Banyumasan (Basa Banyumasan)
  * @author StefanusRA
  */
