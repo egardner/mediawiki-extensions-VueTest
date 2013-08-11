@@ -229,6 +229,13 @@ $messages['mk'] = array(
 	'boilerplate-i18n-welcome' => 'Добредојдовте на податотеката за локализација на додатокот ПодготвенТекст (BoilerPlate).',
 );
 
+/** Marathi (मराठी)
+ * @author V.narsikar
+ */
+$messages['mr'] = array(
+	'boilerplate-desc' => 'हे उदाहरणादाखल असलेले विस्तारक आहे',
+);
+
 /** Malay (Bahasa Melayu)
  * @author Anakmalaysia
  */
