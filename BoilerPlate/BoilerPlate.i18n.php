@@ -31,6 +31,14 @@ $messages['ast'] = array(
 	'boilerplate-i18n-welcome' => 'Bienveníu al ficheru de llocalización de la estensión BoilerPlate.',
 );
 
+/** Bikol Central (Bikol Central)
+ * @author Geopoet
+ */
+$messages['bcl'] = array(
+	'boilerplate-desc' => 'Ini sarong ehemplo nin ekstensyon',
+	'boilerplate-i18n-welcome' => 'Marhayon na pag-abot sa sagunson nin lokalisasyon kan ekstensyon nin GagaangPlato.',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
