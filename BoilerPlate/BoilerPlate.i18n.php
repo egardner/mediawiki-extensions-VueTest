@@ -117,6 +117,14 @@ $messages['fi'] = array(
 	'boilerplate-i18n-welcome' => 'Tervetuloa BoilerPlate-laajennuksen lokalisointitiedostoon.',
 );
 
+/** Faroese (føroyskt)
+ * @author EileenSanda
+ */
+$messages['fo'] = array(
+	'boilerplate-desc' => 'Hetta er eitt dømi um eitt ískoyti',
+	'boilerplate-i18n-welcome' => 'Vælkomin á staðsetingarfíluna til BoilerPlate ískoytið.',
+);
+
 /** French (français)
  * @author Gomoko
  */
