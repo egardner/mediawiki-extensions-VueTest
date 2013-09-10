@@ -309,6 +309,14 @@ $messages['pt'] = array(
 	'boilerplate-i18n-welcome' => 'Bem-vindo(a) ao ficheiro de localização da extensão exemplificativa BoilerPlate.',
 );
 
+/** Brazilian Portuguese (português do Brasil)
+ * @author Cainamarques
+ */
+$messages['pt-br'] = array(
+	'boilerplate-desc' => 'Esta é uma extensão exemplificativa',
+	'boilerplate-i18n-welcome' => 'Bem-vindo(a) ao arquivo de localização da extensão BoilerPlate.',
+);
+
 /** tarandíne (tarandíne)
  * @author Joetaras
  */
