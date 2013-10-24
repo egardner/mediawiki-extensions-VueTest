@@ -342,9 +342,11 @@ $messages['si'] = array(
 
 /** Swedish (svenska)
  * @author Jopparn
+ * @author LittleGun
  */
 $messages['sv'] = array(
 	'boilerplate-desc' => 'Detta är ett exempel-tillägg',
+	'boilerplate-i18n-welcome' => 'Välkommen till BoilerPlate-tilläggets lokaliseringsfil.',
 );
 
 /** Tamil (தமிழ்)
