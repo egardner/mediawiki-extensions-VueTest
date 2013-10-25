@@ -250,6 +250,7 @@ $messages['mk'] = array(
  */
 $messages['mr'] = array(
 	'boilerplate-desc' => 'हे उदाहरणादाखल असलेले विस्तारक आहे',
+	'boilerplate-i18n-welcome' => 'बॉयलरप्लेट विस्तारकाच्या स्थानिकीकरण संचिकेत आपले स्वागत आहे.',
 );
 
 /** Malay (Bahasa Melayu)
