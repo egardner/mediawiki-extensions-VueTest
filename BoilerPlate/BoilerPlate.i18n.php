@@ -107,6 +107,14 @@ $messages['es'] = array(
 	'boilerplate-i18n-welcome' => 'Bienvenido al archivo de localización de la extensión de BoilerPlate.',
 );
 
+/** Persian (فارسی)
+ * @author Ebraminio
+ */
+$messages['fa'] = array(
+	'boilerplate-desc' => 'این یک افزونهٔ نمونه است',
+	'boilerplate-i18n-welcome' => 'به پروندهٔ محلی‌سازی افزونهٔ بویلرپلیت خوش‌آمدید.',
+);
+
 /** Finnish (suomi)
  * @author Nedergard
  * @author Nike
