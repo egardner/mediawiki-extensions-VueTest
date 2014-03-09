@@ -365,6 +365,15 @@ $messages['ta'] = array(
 	'boilerplate-desc' => 'இது ஓர் எடுத்துக்காட்டு நீட்சி',
 );
 
+/** Telugu (తెలుగు)
+ * @author Chaduvari
+ * @author Ravichandra
+ */
+$messages['te'] = array(
+	'boilerplate-desc' => 'ఇది ఒక నమూనా పొడిగింత',
+	'boilerplate-i18n-welcome' => 'బాయిలర్ ప్లేట్ పొడిగింత ప్రాంతీకరణ దస్త్రానికి స్వాగతం.',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
