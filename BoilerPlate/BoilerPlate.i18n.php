@@ -293,6 +293,13 @@ $messages['nl'] = array(
 	'boilerplate-i18n-welcome' => 'Welkom bij het lokalisatiebestand van de BoilerPlate-uitbreiding.',
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'boilerplate-desc' => "Aquí un exemple d'extension",
+);
+
 /** Polish (polski)
  * @author BeginaFelicysym
  */
