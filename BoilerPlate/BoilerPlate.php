@@ -6,7 +6,7 @@
  *
  * @file
  * @ingroup Extensions
- * @author John Doe, 2012
+ * @author John Doe, 2014
  * @license GNU General Public Licence 2.0 or later
  */
 
@@ -16,21 +16,18 @@ $wgExtensionCredits['other'][] = array(
 	'author' => array(
 		'John Doe',
 	),
-	'version'  => '0.1.0',
+	'version'  => '0.2.0',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:BoilerPlate',
 	'descriptionmsg' => 'boilerplate-desc',
 );
 
-
 /* Setup */
 
-$dir = dirname( __FILE__ );
-
 // Register files
-$wgAutoloadClasses['BoilerPlateHooks'] = $dir . '/BoilerPlate.hooks.php';
-$wgAutoloadClasses['SpecialHelloWorld'] = $dir . '/specials/SpecialHelloWorld.php';
-$wgExtensionMessagesFiles['BoilerPlate'] = $dir . '/BoilerPlate.i18n.php';
-$wgExtensionMessagesFiles['BoilerPlateAlias'] = $dir . '/BoilerPlate.i18n.alias.php';
+$wgAutoloadClasses['BoilerPlateHooks'] = __DIR__ . '/BoilerPlate.hooks.php';
+$wgAutoloadClasses['SpecialHelloWorld'] = __DIR__ . '/specials/SpecialHelloWorld.php';
+$wgMessagesDirs['BoilerPlate'] = __DIR__ . '/i18n';
+$wgExtensionMessagesFiles['BoilerPlateAlias'] = __DIR__ . '/BoilerPlate.i18n.alias.php';
 
 // Register hooks
 #$wgHooks['NameOfHook'][] = 'BoilerPlateHooks::onNameOfHook';
@@ -52,7 +49,7 @@ $wgResourceModules['ext.BoilerPlate.foo'] = array(
 	'dependencies' => array(
 	),
 
-	'localBasePath' => $dir,
+	'localBasePath' => __DIR__,
 	'remoteExtPath' => 'examples/BoilerPlate',
 );
 

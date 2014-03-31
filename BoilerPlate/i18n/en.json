@@ -1,0 +1,7 @@
+{
+    "@metadata": {
+        "authors": []
+    },
+    "boilerplate-desc": "This is an example extension",
+    "boilerplate-i18n-welcome": "Welcome to the localization file of the BoilerPlate extension."
+}

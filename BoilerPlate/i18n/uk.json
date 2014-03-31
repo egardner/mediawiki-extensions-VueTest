@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Base"
+        ]
+    },
+    "boilerplate-desc": "Це приклад розширення",
+    "boilerplate-i18n-welcome": "Ласкаво просимо до файлу локалізації  розширення BoilerPlate extension."
+}

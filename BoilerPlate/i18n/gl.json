@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Toliño"
+        ]
+    },
+    "boilerplate-desc": "Esta é unha extensión de exemplo",
+    "boilerplate-i18n-welcome": "Dámoslle a benvida ao ficheiro de localización da extensión BoilerPlate."
+}

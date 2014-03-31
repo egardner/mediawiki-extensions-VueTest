@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Beta16"
+        ]
+    },
+    "boilerplate-desc": "Questa è un'estensione di esempio",
+    "boilerplate-i18n-welcome": "Benvenuti al file di localizzazione dell'estensione BoilerPlate."
+}
