@@ -77,7 +77,7 @@ $wgAutoloadClasses['ExampleHooks'] = $dir . '/Example.hooks.php';
 $wgAutoloadClasses['SpecialHelloWorld'] = $dir . '/specials/SpecialHelloWorld.php';
 $wgAutoloadClasses['ApiQueryExample'] = $dir . '/api/ApiQueryExample.php';
 
-$wgExtensionMessagesFiles['Example'] = $dir . '/Example.i18n.php';
+$wgMessagesDirs['Example'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['ExampleAlias'] = $dir . '/Example.i18n.alias.php';
 $wgExtensionMessagesFiles['ExampleMagic'] = $dir . '/Example.i18n.magic.php';
 

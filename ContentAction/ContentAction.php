@@ -18,7 +18,7 @@ $wgExtensionCredits['other'][] = array(
 $wgHooks['UnknownAction'][] = 'wfAddactActionHook';
 $wgHooks['SkinTemplateNavigation'][] = 'wfAddactionContentHook';
 
-$wgExtensionMessagesFiles['ContentAction'] = dirname( __FILE__ ) . '/ContentAction.i18n.php';
+$wgMessagesDirs['ContentAction'] = __DIR__ . '/i18n';
 
 function wfAddActionContentHook( $skin, &$content_actions ) {
 	$action = $skin->getRequest->getText( 'action' );
