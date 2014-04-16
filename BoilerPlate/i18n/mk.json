@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Bjankuloski06"
-        ]
-    },
-    "boilerplate-desc": "Ововој додаток е урнек",
-    "boilerplate-i18n-welcome": "Добредојдовте на податотеката за локализација на додатокот ПодготвенТекст (BoilerPlate)."
+	"@metadata": {
+		"authors": [
+			"Bjankuloski06"
+		]
+	},
+	"boilerplate-desc": "Ововој додаток е урнек",
+	"boilerplate-i18n-welcome": "Добредојдовте на податотеката за локализација на додатокот ПодготвенТекст (BoilerPlate)."
 }

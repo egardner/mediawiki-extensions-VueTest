@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Hamilton Abreu"
-        ]
-    },
-    "boilerplate-desc": "Esta é uma extensão exemplificativa",
-    "boilerplate-i18n-welcome": "Bem-vindo(a) ao ficheiro de localização da extensão exemplificativa BoilerPlate."
+	"@metadata": {
+		"authors": [
+			"Hamilton Abreu"
+		]
+	},
+	"boilerplate-desc": "Esta é uma extensão exemplificativa",
+	"boilerplate-i18n-welcome": "Bem-vindo(a) ao ficheiro de localização da extensão exemplificativa BoilerPlate."
 }

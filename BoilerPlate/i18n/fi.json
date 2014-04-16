@@ -1,11 +1,11 @@
 {
-    "@metadata": {
-        "authors": [
-            "Nedergard",
-            "Nike",
-            "VezonThunder"
-        ]
-    },
-    "boilerplate-desc": "Tämä on esimerkkilaajennus",
-    "boilerplate-i18n-welcome": "Tervetuloa BoilerPlate-laajennuksen lokalisointitiedostoon."
+	"@metadata": {
+		"authors": [
+			"Nedergard",
+			"Nike",
+			"VezonThunder"
+		]
+	},
+	"boilerplate-desc": "Tämä on esimerkkilaajennus",
+	"boilerplate-i18n-welcome": "Tervetuloa BoilerPlate-laajennuksen lokalisointitiedostoon."
 }

@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Jopparn",
-            "LittleGun"
-        ]
-    },
-    "boilerplate-desc": "Detta är ett exempel-tillägg",
-    "boilerplate-i18n-welcome": "Välkommen till BoilerPlate-tilläggets lokaliseringsfil."
+	"@metadata": {
+		"authors": [
+			"Jopparn",
+			"LittleGun"
+		]
+	},
+	"boilerplate-desc": "Detta är ett exempel-tillägg",
+	"boilerplate-i18n-welcome": "Välkommen till BoilerPlate-tilläggets lokaliseringsfil."
 }

@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Arnaugir"
-        ]
-    },
-    "boilerplate-desc": "Aquesta és una extensió d'exemple"
+	"@metadata": {
+		"authors": [
+			"Arnaugir"
+		]
+	},
+	"boilerplate-desc": "Aquesta és una extensió d'exemple"
 }

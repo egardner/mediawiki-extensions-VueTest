@@ -1,10 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Amire80",
-            "Inkbug"
-        ]
-    },
-    "boilerplate-desc": "זאת היא הרחבה לדוגמא",
-    "boilerplate-i18n-welcome": "ברוכים הבאים לקובץ התרגום של ההרחבה BoilerPlate."
+	"@metadata": {
+		"authors": [
+			"Amire80",
+			"Inkbug"
+		]
+	},
+	"boilerplate-desc": "זאת היא הרחבה לדוגמא",
+	"boilerplate-i18n-welcome": "ברוכים הבאים לקובץ התרגום של ההרחבה BoilerPlate."
 }

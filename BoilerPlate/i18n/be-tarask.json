@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Wizardist"
-        ]
-    },
-    "boilerplate-desc": "Гэта прыклад пашырэньня",
-    "boilerplate-i18n-welcome": "Вітаем у лякалізацыйным файле пашырэньня BoilerPlate."
+	"@metadata": {
+		"authors": [
+			"Wizardist"
+		]
+	},
+	"boilerplate-desc": "Гэта прыклад пашырэньня",
+	"boilerplate-i18n-welcome": "Вітаем у лякалізацыйным файле пашырэньня BoilerPlate."
 }

@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Armando-Martin"
-        ]
-    },
-    "boilerplate-desc": "Esta es una extensión de ejemplo",
-    "boilerplate-i18n-welcome": "Bienvenido al archivo de localización de la extensión de BoilerPlate."
+	"@metadata": {
+		"authors": [
+			"Armando-Martin"
+		]
+	},
+	"boilerplate-desc": "Esta es una extensión de ejemplo",
+	"boilerplate-i18n-welcome": "Bienvenido al archivo de localización de la extensión de BoilerPlate."
 }

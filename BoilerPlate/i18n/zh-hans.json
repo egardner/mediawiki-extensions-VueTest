@@ -1,9 +1,10 @@
 {
-    "@metadata": {
-        "authors": [
-            "Hydra"
-        ]
-    },
-    "boilerplate-desc": "这是一个示例扩展",
-    "boilerplate-i18n-welcome": "欢迎来到 BoilerPlate 扩展的翻译文件。"
+	"@metadata": {
+		"authors": [
+			"Hydra",
+			"Hudafu"
+		]
+	},
+	"boilerplate-desc": "这是一个示例扩展程序",
+	"boilerplate-i18n-welcome": "欢迎来到BoilerPlate扩展程序的本地化文件。"
 }
