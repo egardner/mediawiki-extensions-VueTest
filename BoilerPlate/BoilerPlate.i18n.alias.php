@@ -7,3 +7,8 @@
  */
 
 $specialPageAliases = array();
+
+/** English (English) */
+$specialPageAliases['en'] = array(
+	'HelloWorld' => array( 'HelloWorld' ),
+);
