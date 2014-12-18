@@ -50,20 +50,12 @@ class ApiQueryExample extends ApiQueryBase {
 		);
 	}
 
-	public function getParamDescription() {
+	protected function getExamplesMessages() {
 		return array(
-			'key' => 'Reduce the result to only one of the foo properties.',
-		);
-	}
-
-	public function getDescription() {
-		return 'Get information about foo';
-	}
-
-	protected function getExamples() {
-		return array(
-			'api.php?action=query&list=example',
-			'api.php?action=query&list=example&key=do',
+			'api.php?action=query&list=example'
+				=> 'apihelp-query+example-example-1',
+			'api.php?action=query&list=example&key=do'
+				=> 'apihelp-query+example-example-2',
 		);
 	}
 
