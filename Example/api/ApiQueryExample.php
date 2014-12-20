@@ -52,9 +52,9 @@ class ApiQueryExample extends ApiQueryBase {
 
 	protected function getExamplesMessages() {
 		return array(
-			'api.php?action=query&list=example'
+			'action=query&list=example'
 				=> 'apihelp-query+example-example-1',
-			'api.php?action=query&list=example&key=do'
+			'action=query&list=example&key=do'
 				=> 'apihelp-query+example-example-2',
 		);
 	}
