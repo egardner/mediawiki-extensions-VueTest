@@ -58,8 +58,4 @@ class ApiQueryExample extends ApiQueryBase {
 				=> 'apihelp-query+example-example-2',
 		);
 	}
-
-	public function getVersion() {
-		return __CLASS__ . ': $Id$';
-	}
 }
