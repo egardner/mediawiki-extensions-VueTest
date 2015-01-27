@@ -18,9 +18,9 @@
 
 			$box = $( '<div class="mw-example-welcome"></div>' ).append(
 				$( '<h4>', {
-					text: mw.user.anonymous() ?
+					text: mw.user.isAnon() ?
 						mw.msg( 'example-welcome-title-loggedout') :
-						mw.msg( 'example-welcome-title-user', mw.user.name() )
+						mw.msg( 'example-welcome-title-user', mw.user.getName() )
 				} )
 			);
 
