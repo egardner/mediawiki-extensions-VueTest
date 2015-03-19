@@ -23,4 +23,8 @@ class SpecialHelloWorld extends SpecialPage {
 
 		$out->addWikiMsg( 'boilerplate-helloworld-intro' );
 	}
+
+	protected function getGroupName() {
+		return 'other';
+	}
 }

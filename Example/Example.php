@@ -95,7 +95,6 @@ $wgHooks['LoadExtensionSchemaUpdates'][] = 'ExampleHooks::onLoadExtensionSchemaU
 // Register special pages
 // See also http://www.mediawiki.org/wiki/Manual:Special_pages
 $wgSpecialPages['HelloWorld'] = 'SpecialHelloWorld';
-$wgSpecialPageGroups['HelloWorld'] = 'other';
 
 // Register modules
 // See also http://www.mediawiki.org/wiki/Manual:$wgResourceModules

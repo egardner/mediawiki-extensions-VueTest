@@ -34,7 +34,6 @@ $wgExtensionMessagesFiles['BoilerPlateAlias'] = __DIR__ . '/BoilerPlate.i18n.ali
 
 // Register special pages
 $wgSpecialPages['HelloWorld'] = 'SpecialHelloWorld';
-$wgSpecialPageGroups['HelloWorld'] = 'other';
 
 // Register modules
 $wgResourceModules['ext.BoilerPlate.foo'] = array(

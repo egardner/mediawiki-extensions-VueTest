@@ -33,4 +33,7 @@ class SpecialHelloWorld extends SpecialPage {
 		$out->addWikiMsg( 'example-helloworld-intro' );
 	}
 
+	protected function getGroupName() {
+		return 'other';
+	}
 }
