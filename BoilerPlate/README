@@ -7,3 +7,13 @@ Git meta-data and other examples.
 
 	git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/examples.git mw-extensions-example-repo
 	cp -R mw-extensions-example-repo/BoilerPlate ./MyExtension
+
+This automates the recommended code checkers for PHP and JavaScript code in Wikimedia projects
+(see https://www.mediawiki.org/wiki/Continuous_integration/Test_entry_points).
+To take advantage of this automation.
+  # install nodejs, npm, and PHP composer
+  # change to the extension's directory
+  # npm install
+  # composer install
+
+Once set up, running `npm test` and `composer test` will run automated code checks.

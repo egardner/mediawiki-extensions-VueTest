@@ -1,23 +1,37 @@
-/**
- * JavaScript for Foo in BoilerPlate.
- */
+( function () {
+	var x;
 
-( function ( mw, $ ) {
-	var foo, x, y;
-
-	function my() {
-
+	function iffify( y ) {
+		return y + x;
 	}
 
-	foo = {
-		init: function () {
-			// ..
-		},
-		doStuff: function () {
-			// ..
+	/**
+	 * @class mw.boilerPlate.Foo
+	 *
+	 * @constructor
+	 */
+	function Foo() {
+	}
+
+	/**
+	 * @static
+	 * @param {string} a
+	 * @param {number} b
+	 * @return {boolean}
+	 */
+	Foo.create = function ( a, b ) {
+		return new Foo( iffify( a + b ) ).connect();
+	};
+
+	Foo.prototype = {
+
+		/**
+		 * Establish connection to the server
+		 */
+		connect: function () {
 		}
 	};
 
-	mw.libs.foo = foo;
+	mw.boilerPlate.Foo = Foo;
 
-}( mediaWiki, jQuery ) );
+}() );
