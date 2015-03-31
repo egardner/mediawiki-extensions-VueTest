@@ -1,0 +1,13 @@
+{
+	"require-dev": {
+		"jakub-onderka/php-parallel-lint": "0.8.*",
+		"mediawiki/mediawiki-codesniffer": "dev-master",
+		"squizlabs/php_codesniffer": "2.1.*"
+	},
+	"scripts": {
+		"test": [
+			"parallel-lint . --exclude vendor",
+			"phpcs . -v --standard=vendor/mediawiki/mediawiki-codesniffer/MediaWiki --ignore=vendor/*,node_modules/* --extensions=php"
+		]
+	}
+}
