@@ -22,6 +22,8 @@ class SpecialHelloWorld extends SpecialPage {
 
 		$out->setPageTitle( $this->msg( 'boilerplate-helloworld' ) );
 
+		$out->addHelpLink( 'How to become a MediaWiki hacker' );
+
 		$out->addWikiMsg( 'boilerplate-helloworld-intro' );
 	}
 
