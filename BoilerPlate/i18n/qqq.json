@@ -2,9 +2,10 @@
 	"@metadata": {
 		"authors": [
 			"Shirayuki",
-			"Umherirrender"
+			"Umherirrender",
+			"Amire80"
 		]
 	},
 	"boilerplate-desc": "{{desc|name=Boilerplate|url=https://www.mediawiki.org/wiki/Extension:Boilerplate}}",
-	"boilerplate-i18n-welcome": "Used to greet the user when reading the .i18n.php file."
+	"boilerplate-i18n-welcome": "Used to greet the user when reading the i18n/??.json file."
 }
