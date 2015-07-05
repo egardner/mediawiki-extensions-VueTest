@@ -2,9 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Jopparn",
-			"LittleGun"
+			"LittleGun",
+			"Rockyfelle"
 		]
 	},
 	"boilerplate-desc": "Detta är ett exempel-tillägg",
-	"boilerplate-i18n-welcome": "Välkommen till BoilerPlate-tilläggets lokaliseringsfil."
+	"boilerplate-i18n-welcome": "Välkommen till BoilerPlate-tilläggets lokaliseringsfil.",
+	"boilerplate-helloworld": "Hello world!",
+	"helloworld": "Hej världen"
 }
