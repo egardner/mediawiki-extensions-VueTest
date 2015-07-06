@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"BeginaFelicysym"
+			"BeginaFelicysym",
+			"Chrumps",
+			"Woytecr"
 		]
 	},
 	"boilerplate-desc": "To jest rozszerzenie przykładowe",
-	"boilerplate-i18n-welcome": "Witamy w lokalizacji pliku rozszerzenia szablonowego BoilerPlate."
+	"boilerplate-i18n-welcome": "Witamy w lokalizacji pliku rozszerzenia szablonowego BoilerPlate.",
+	"boilerplate-helloworld": "Witaj świecie!",
+	"helloworld": "WitajŚwiecie"
 }
