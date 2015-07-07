@@ -1,9 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Beta16"
+			"Beta16",
+			"Alexmar983"
 		]
 	},
 	"boilerplate-desc": "Questa è un'estensione di esempio",
-	"boilerplate-i18n-welcome": "Benvenuti al file di localizzazione dell'estensione BoilerPlate."
+	"boilerplate-i18n-welcome": "Benvenuti al file di localizzazione dell'estensione BoilerPlate.",
+	"boilerplate-helloworld": "Salve mondo!",
+	"helloworld": "HelloWorld"
 }
