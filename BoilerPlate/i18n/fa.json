@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ebraminio"
+			"Ebraminio",
+			"ZxxZxxZ"
 		]
 	},
 	"boilerplate-desc": "این یک افزونهٔ نمونه است",
-	"boilerplate-i18n-welcome": "به پروندهٔ محلی‌سازی افزونهٔ بویلرپلیت خوش‌آمدید."
+	"boilerplate-i18n-welcome": "به پروندهٔ محلی‌سازی افزونهٔ بویلرپلیت خوش‌آمدید.",
+	"helloworld": "سلام دنیا"
 }
