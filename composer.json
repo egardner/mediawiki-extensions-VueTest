@@ -6,7 +6,7 @@
 	"scripts": {
 		"test": [
 			"parallel-lint . --exclude vendor",
-			"phpcs . -p --standard=vendor/mediawiki/mediawiki-codesniffer/MediaWiki --ignore=vendor/*,node_modules/* --extensions=php"
+			"phpcs -p"
 		]
 	}
 }
