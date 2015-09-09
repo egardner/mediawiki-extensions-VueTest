@@ -5,11 +5,12 @@ If you are checking this out from Git and intend to use it, you may use the
 following commands to make a clean directory of just this template without the
 Git meta-data and other examples.
 
-	git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/examples.git mw-extensions-example-repo
-	cp -R mw-extensions-example-repo/BoilerPlate ./MyExtension
+	cd extensions
+	git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/BoilerPlate.git
+	cp -R BoilerPlate ./MyExtension
 
 This automates the recommended code checkers for PHP and JavaScript code in Wikimedia projects
-(see https://www.mediawiki.org/wiki/Continuous_integration/Test_entry_points).
+(see https://www.mediawiki.org/wiki/Continuous_integration/Entry_points).
 To take advantage of this automation.
   # install nodejs, npm, and PHP composer
   # change to the extension's directory
