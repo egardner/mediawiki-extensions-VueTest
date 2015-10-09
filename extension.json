@@ -43,7 +43,7 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteExtPath": "examples/BoilerPlate"
+		"remoteExtPath": "BoilerPlate"
 	},
 	"SpecialPages": {
 		"HelloWorld": "SpecialHelloWorld"
