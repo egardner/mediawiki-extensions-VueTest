@@ -5,5 +5,6 @@
 		]
 	},
 	"boilerplate-desc": "Isto es un extension de exemplo",
-	"boilerplate-i18n-welcome": "Benvenite al file de localisation del extension \"BoilerPlate\" (modello)."
+	"boilerplate-i18n-welcome": "Benvenite al file de localisation del extension \"BoilerPlate\" (modello).",
+	"helloworld": "HalloMundo"
 }

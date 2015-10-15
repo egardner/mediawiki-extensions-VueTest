@@ -5,5 +5,6 @@
 		]
 	},
 	"boilerplate-desc": "To jo pśikładowe rozšyrjenje",
-	"boilerplate-i18n-welcome": "Witaj k localizaciskej dataji rozšyrjenja BoilerPlate."
+	"boilerplate-i18n-welcome": "Witaj k localizaciskej dataji rozšyrjenja BoilerPlate.",
+	"helloworld": "HelloWorld"
 }

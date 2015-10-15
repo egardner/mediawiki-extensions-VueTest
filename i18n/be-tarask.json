@@ -5,5 +5,6 @@
 		]
 	},
 	"boilerplate-desc": "Гэта прыклад пашырэньня",
-	"boilerplate-i18n-welcome": "Вітаем у лякалізацыйным файле пашырэньня BoilerPlate."
+	"boilerplate-i18n-welcome": "Вітаем у лякалізацыйным файле пашырэньня BoilerPlate.",
+	"helloworld": "HelloWorld"
 }

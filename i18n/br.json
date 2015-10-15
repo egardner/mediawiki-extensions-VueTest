@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Fohanno"
+			"Fohanno",
+			"Fulup"
 		]
 	},
-	"boilerplate-desc": "Setu amañ ur skouer astenn"
+	"boilerplate-desc": "Setu amañ ur skouer astenn",
+	"helloworld": "HelloWorld"
 }
