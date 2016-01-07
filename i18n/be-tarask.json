@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Wizardist"
+			"Wizardist",
+			"Red Winged Duck"
 		]
 	},
 	"boilerplate-desc": "Гэта прыклад пашырэньня",
 	"boilerplate-i18n-welcome": "Вітаем у лякалізацыйным файле пашырэньня BoilerPlate.",
+	"boilerplate-helloworld": "Hello world!",
 	"helloworld": "HelloWorld"
 }
