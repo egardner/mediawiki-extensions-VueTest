@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eitvys200"
+		]
+	},
+	"boilerplate-desc": "Tai pavyzdinis plėtinys",
+	"boilerplate-i18n-welcome": "Sveiki atvykę į BoilerPlate plėtinio lokalizacijos failą.",
+	"boilerplate-helloworld": "Sveikas, pasauli!",
+	"boilerplate-helloworld-intro": "Sveiki atvykę į BoilerPlate plėtinio specialų puslapį „Sveikas, pasauli“.",
+	"helloworld": "Sveikas, pasauli"
+}
