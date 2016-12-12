@@ -1,9 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Cainamarques"
+			"Cainamarques",
+			"!Silent"
 		]
 	},
 	"boilerplate-desc": "Esta é uma extensão exemplificativa",
-	"boilerplate-i18n-welcome": "Bem-vindo(a) ao arquivo de localização da extensão BoilerPlate."
+	"boilerplate-i18n-welcome": "Bem-vindo(a) ao arquivo de localização da extensão BoilerPlate.",
+	"boilerplate-helloworld": "Olá mundo!",
+	"boilerplate-helloworld-intro": "Bem-vindo (a) à página especial \"Olá mundo\" da extensão BoilerPlate.",
+	"helloworld": "Olá mundo"
 }
