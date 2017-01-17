@@ -1,4 +1,4 @@
-( function () {
+( function ( mw ) {
 	var x;
 
 	function iffify( y ) {
@@ -34,4 +34,4 @@
 
 	mw.boilerPlate.Foo = Foo;
 
-}() );
+}( mediaWiki ) );
