@@ -12,8 +12,15 @@
 		"BoilerPlateHooks": "BoilerPlate.hooks.php",
 		"SpecialHelloWorld": "specials/SpecialHelloWorld.php"
 	},
+	"config_prefix": "boilerplate",
+	"ConfigRegistry": {
+		"boilerplate": "BoilerPlateHooks::makeConfig"
+	},
 	"config": {
-		"BoilerPlateEnableFoo": true
+		"EnableFoo": {
+			"value": true,
+			"description": "Whether or not the foo feature is enabled."
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"BoilerPlateAlias": "BoilerPlate.i18n.alias.php"
@@ -48,5 +55,5 @@
 	"SpecialPages": {
 		"HelloWorld": "SpecialHelloWorld"
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }

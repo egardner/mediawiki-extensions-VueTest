@@ -6,6 +6,8 @@
  * @ingroup Extensions
  */
 
+use MediaWiki\MediaWikiServices;
+
 class SpecialHelloWorld extends SpecialPage {
 	public function __construct() {
 		parent::__construct( 'HelloWorld' );
@@ -61,8 +63,13 @@ class SpecialHelloWorld extends SpecialPage {
 				'label' => 'Weapons to use',
 				'options' => [ 'Cannons' => 'cannon', 'Swords' => 'sword' ],
 				'default' => [ 'sword' ],
-			],
-			'radiolol' => [
+			]
+		];
+
+		// If foo is enabled, add another form field.
+		$config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'boilerplate' );
+		if ( $config->get( 'EnableFoo' ) ) {
+			$formDescriptor['radiolol'] = [
 				'class' => 'HTMLRadioField',
 				'label' => 'Who do you like?',
 				'options' => [
@@ -71,8 +78,8 @@ class SpecialHelloWorld extends SpecialPage {
 					'both' => 'Both'
 				],
 				'default' => 'pirates',
-			],
-		];
+			];
+		}
 
 		// $htmlForm = new HTMLForm( $formDescriptor, $this->getContext(), 'testform' );
 		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext(), 'testform' );
