@@ -6,7 +6,11 @@
  * @ingroup Extensions
  */
 
+namespace MediaWiki\Extensions\BoilerPlate;
+
+use HTMLForm;
 use MediaWiki\MediaWikiServices;
+use SpecialPage;
 
 class SpecialHelloWorld extends SpecialPage {
 	public function __construct() {

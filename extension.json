@@ -9,8 +9,8 @@
 	"license-name": "MIT",
 	"type": "other",
 	"AutoloadClasses": {
-		"BoilerPlateHooks": "BoilerPlate.hooks.php",
-		"SpecialHelloWorld": "specials/SpecialHelloWorld.php"
+		"MediaWiki\\Extensions\\BoilerPlate\\Hooks": "BoilerPlate.hooks.php",
+		"MediaWiki\\Extensions\\BoilerPlate\\SpecialHelloWorld": "specials/SpecialHelloWorld.php"
 	},
 	"ConfigRegistry": {
 		"boilerplate": "GlobalVarConfig::newInstance"
@@ -26,7 +26,7 @@
 	},
 	"Hooks": {
 		"NameOfHook": [
-			"BoilerPlateHooks::onNameOfHook"
+			"MediaWiki\\Extensions\\BoilerPlate\\Hooks::onNameOfHook"
 		]
 	},
 	"MessagesDirs": {
@@ -52,7 +52,7 @@
 		"remoteExtPath": "BoilerPlate/modules"
 	},
 	"SpecialPages": {
-		"HelloWorld": "SpecialHelloWorld"
+		"HelloWorld": "MediaWiki\\Extensions\\BoilerPlate\\SpecialHelloWorld"
 	},
 	"manifest_version": 2
 }

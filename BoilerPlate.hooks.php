@@ -1,4 +1,7 @@
 <?php
+
+namespace MediaWiki\Extensions\BoilerPlate;
+
 /**
  * Hooks for BoilerPlate extension
  *
@@ -6,7 +9,7 @@
  * @ingroup Extensions
  */
 
-class BoilerPlateHooks {
+class Hooks {
 
 	/**
 	 * Hook: NameOfHook
