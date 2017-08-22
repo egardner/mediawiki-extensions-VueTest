@@ -12,12 +12,11 @@
 		"BoilerPlateHooks": "BoilerPlate.hooks.php",
 		"SpecialHelloWorld": "specials/SpecialHelloWorld.php"
 	},
-	"config_prefix": "boilerplate",
 	"ConfigRegistry": {
-		"boilerplate": "BoilerPlateHooks::makeConfig"
+		"boilerplate": "GlobalVarConfig::newInstance"
 	},
 	"config": {
-		"EnableFoo": {
+		"BoilerPlateEnableFoo": {
 			"value": true,
 			"description": "Whether or not the foo feature is enabled."
 		}
@@ -38,19 +37,19 @@
 	"ResourceModules": {
 		"ext.boilerPlate.foo": {
 			"scripts": [
-				"modules/ext.boilerPlate.js",
-				"modules/ext.boilerPlate.foo.js"
+				"ext.boilerPlate.js",
+				"ext.boilerPlate.foo.js"
 			],
 			"styles": [
-				"modules/ext.boilerPlate.foo.css"
+				"ext.boilerPlate.foo.css"
 			],
 			"messages": [],
 			"dependencies": []
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteExtPath": "BoilerPlate"
+		"localBasePath": "modules",
+		"remoteExtPath": "BoilerPlate/modules"
 	},
 	"SpecialPages": {
 		"HelloWorld": "SpecialHelloWorld"
