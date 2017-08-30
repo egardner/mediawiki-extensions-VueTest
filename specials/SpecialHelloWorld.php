@@ -72,7 +72,7 @@ class SpecialHelloWorld extends SpecialPage {
 
 		// If foo is enabled, add another form field.
 		$config = MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'boilerplate' );
-		if ( $config->get( 'EnableFoo' ) ) {
+		if ( $config->get( 'BoilerPlateEnableFoo' ) ) {
 			$formDescriptor['radiolol'] = [
 				'class' => 'HTMLRadioField',
 				'label' => 'Who do you like?',
