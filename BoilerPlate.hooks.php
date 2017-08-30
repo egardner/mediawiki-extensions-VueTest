@@ -1,6 +1,6 @@
 <?php
 
-namespace MediaWiki\Extensions\BoilerPlate;
+namespace MediaWiki\Extension\BoilerPlate;
 
 /**
  * Hooks for BoilerPlate extension

@@ -6,7 +6,7 @@
  * @ingroup Extensions
  */
 
-namespace MediaWiki\Extensions\BoilerPlate;
+namespace MediaWiki\Extension\BoilerPlate;
 
 use HTMLForm;
 use MediaWiki\MediaWikiServices;
