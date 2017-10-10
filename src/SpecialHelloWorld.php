@@ -42,7 +42,8 @@ class SpecialHelloWorld extends SpecialPage {
 			'myfield2' => [
 				'section' => 'section1',
 				'label-message' => 'testform-myfield2',
-				'class' => 'HTMLTextField', // same as type 'text'
+				// HTMLTextField class is the same as type 'text'
+				'class' => 'HTMLTextField',
 			],
 			'myfield3' => [
 				'class' => 'HTMLTextField',
@@ -94,6 +95,10 @@ class SpecialHelloWorld extends SpecialPage {
 		$htmlForm->show();
 	}
 
+	/**
+	 * @param string[] $formData The submitted form data.
+	 * @return bool|string
+	 */
 	static function trySubmit( $formData ) {
 		if ( $formData['myfield1'] == 'Fleep' ) {
 			return true;
@@ -102,6 +107,9 @@ class SpecialHelloWorld extends SpecialPage {
 		return 'HAHA FAIL';
 	}
 
+	/**
+	 * @return string
+	 */
 	protected function getGroupName() {
 		return 'other';
 	}

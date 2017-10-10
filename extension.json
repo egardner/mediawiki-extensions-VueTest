@@ -9,8 +9,8 @@
 	"license-name": "MIT",
 	"type": "other",
 	"AutoloadClasses": {
-		"MediaWiki\\Extension\\BoilerPlate\\Hooks": "BoilerPlate.hooks.php",
-		"MediaWiki\\Extension\\BoilerPlate\\SpecialHelloWorld": "specials/SpecialHelloWorld.php"
+		"MediaWiki\\Extension\\BoilerPlate\\Hooks": "src/Hooks.php",
+		"MediaWiki\\Extension\\BoilerPlate\\SpecialHelloWorld": "src/SpecialHelloWorld.php"
 	},
 	"ConfigRegistry": {
 		"boilerplate": "GlobalVarConfig::newInstance"
