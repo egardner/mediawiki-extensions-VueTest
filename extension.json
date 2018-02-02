@@ -8,6 +8,9 @@
 	"descriptionmsg": "boilerplate-desc",
 	"license-name": "MIT",
 	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.29.0"
+	},
 	"AutoloadClasses": {
 		"MediaWiki\\Extension\\BoilerPlate\\Hooks": "src/Hooks.php",
 		"MediaWiki\\Extension\\BoilerPlate\\SpecialHelloWorld": "src/SpecialHelloWorld.php"
