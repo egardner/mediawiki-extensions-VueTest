@@ -28,9 +28,7 @@
 		"BoilerPlateAlias": "BoilerPlate.i18n.alias.php"
 	},
 	"Hooks": {
-		"NameOfHook": [
-			"MediaWiki\\Extension\\BoilerPlate\\Hooks::onNameOfHook"
-		]
+		"NameOfHook": "MediaWiki\\Extension\\BoilerPlate\\Hooks::onNameOfHook"
 	},
 	"MessagesDirs": {
 		"BoilerPlate": [
