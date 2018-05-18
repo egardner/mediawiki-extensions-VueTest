@@ -49,8 +49,8 @@
 		}
 	},
 	"ResourceFileModulePaths": {
-		"localBasePath": "modules",
-		"remoteExtPath": "BoilerPlate/modules"
+		"localBasePath": "resources",
+		"remoteExtPath": "BoilerPlate/resources"
 	},
 	"SpecialPages": {
 		"HelloWorld": "MediaWiki\\Extension\\BoilerPlate\\SpecialHelloWorld"
