@@ -9,31 +9,23 @@ module.exports = function ( grunt ) {
 
 	grunt.initConfig( {
 		eslint: {
-			all: [
-				'**/*.js',
-				'!node_modules/**',
-				'!vendor/**'
-			]
+			all: '.'
 		},
-		stylelint: {
-			options: {
-				syntax: 'less',
-				allowEmptyInput: true
-			},
-			all: [
-				'**/*.{css,less}',
-				'!node_modules/**',
-				'!vendor/**'
-			]
-		},
-		banana: conf.MessagesDirs,
 		jsonlint: {
 			all: [
 				'**/*.json',
 				'!node_modules/**',
 				'!vendor/**'
 			]
-		}
+		},
+		stylelint: {
+			all: [
+				'**/*.{css,less}',
+				'!node_modules/**',
+				'!vendor/**'
+			]
+		},
+		banana: conf.MessagesDirs
 	} );
 
 	grunt.registerTask( 'test', [ 'eslint', 'stylelint', 'jsonlint', 'banana' ] );
