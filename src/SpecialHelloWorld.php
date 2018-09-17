@@ -104,7 +104,7 @@ class SpecialHelloWorld extends SpecialPage {
 		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext(), 'testform' );
 
 		$htmlForm->setSubmitText( 'Foo submit' );
-		$htmlForm->setSubmitCallback( [ 'SpecialHelloWorld', 'trySubmit' ] );
+		$htmlForm->setSubmitCallback( [ __CLASS__ , 'trySubmit' ] );
 
 		$htmlForm->show();
 	}
