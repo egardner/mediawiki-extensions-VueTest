@@ -1,4 +1,4 @@
-( function ( mw ) {
+( function () {
 
 	/**
 	 * @class mw.boilerPlate
@@ -7,4 +7,4 @@
 	mw.boilerPlate = {
 	};
 
-}( mediaWiki ) );
+}() );
