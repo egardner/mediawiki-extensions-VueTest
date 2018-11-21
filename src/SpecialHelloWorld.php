@@ -104,21 +104,15 @@ class SpecialHelloWorld extends SpecialPage {
 		$htmlForm = HTMLForm::factory( 'ooui', $formDescriptor, $this->getContext(), 'testform' );
 
 		$htmlForm->setSubmitText( 'Foo submit' );
-		$htmlForm->setSubmitCallback( [ __CLASS__ , 'trySubmit' ] );
+		$htmlForm->setSubmitCallback( function ( array $formData, HTMLForm $form ) {
+			if ( $formData['myfield1'] === 'Fleep' ) {
+				return true;
+			}
+
+			return 'HAHA FAIL';
+		} );
 
 		$htmlForm->show();
-	}
-
-	/**
-	 * @param string[] $formData The submitted form data.
-	 * @return bool|string
-	 */
-	static function trySubmit( $formData ) {
-		if ( $formData['myfield1'] == 'Fleep' ) {
-			return true;
-		}
-
-		return 'HAHA FAIL';
 	}
 
 	/**
