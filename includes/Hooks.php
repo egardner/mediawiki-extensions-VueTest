@@ -19,19 +19,14 @@
 
 namespace MediaWiki\Extension\BoilerPlate;
 
-/**
- * Hooks for BoilerPlate extension
- */
 class Hooks {
 
 	/**
-	 * Hook: NameOfHook
-	 *
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/Something
 	 * @param string $arg1 First argument
-	 * @param bool $arg2 Second argument
-	 * @param bool $arg3 Third argument
+	 * @param array $arg2
 	 */
-	public static function onNameOfHook( $arg1, $arg2, $arg3 ) {
+	public static function onSomething( $arg1, array $arg2 ) {
 		// Stub
 	}
 

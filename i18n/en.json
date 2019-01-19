@@ -4,12 +4,5 @@
 			"Your Name"
 		]
 	},
-	"boilerplate-desc": "This is an example extension",
-	"boilerplate-helloworld": "Hello world!",
-	"boilerplate-helloworld-intro": "Welcome to the \"Hello world\" special page of the BoilerPlate extension.",
-	"helloworld": "Hello world",
-	"testform-section1": "Test Form",
-	"testform-subsection": "Subsection",
-	"testform-myfield1": "Howdy!",
-	"testform-myfield2": "Sup?"
+	"boilerplate-desc": "This is an example extension"
 }

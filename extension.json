@@ -1,6 +1,5 @@
 {
 	"name": "BoilerPlate",
-	"version": "0.0.0",
 	"author": [
 		"Your Name"
 	],
@@ -9,51 +8,36 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.29.0"
+		"MediaWiki": ">= 1.32.0"
 	},
-	"AutoloadClasses": {
-		"MediaWiki\\Extension\\BoilerPlate\\Hooks": "src/Hooks.php",
-		"MediaWiki\\Extension\\BoilerPlate\\SpecialHelloWorld": "src/SpecialHelloWorld.php"
-	},
-	"ConfigRegistry": {
-		"boilerplate": "GlobalVarConfig::newInstance"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\BoilerPlate\\": "includes/"
 	},
 	"config": {
 		"BoilerPlateEnableFoo": {
-			"value": true,
-			"description": "Whether or not the foo feature is enabled."
+			"description": "Enable the Foo feature.",
+			"value": true
 		}
 	},
-	"ExtensionMessagesFiles": {
-		"BoilerPlateAlias": "BoilerPlate.i18n.alias.php"
-	},
 	"Hooks": {
-		"NameOfHook": "MediaWiki\\Extension\\BoilerPlate\\Hooks::onNameOfHook"
+		"Something": "MediaWiki\\Extension\\BoilerPlate\\Hooks::onSomething"
 	},
 	"MessagesDirs": {
 		"BoilerPlate": [
 			"i18n"
 		]
 	},
-	"ResourceModules": {
-		"ext.boilerPlate.foo": {
-			"scripts": [
-				"ext.boilerPlate.js",
-				"ext.boilerPlate.foo.js"
-			],
-			"styles": [
-				"ext.boilerPlate.foo.css"
-			],
-			"messages": [],
-			"dependencies": []
-		}
-	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
 		"remoteExtPath": "BoilerPlate/resources"
 	},
-	"SpecialPages": {
-		"HelloWorld": "MediaWiki\\Extension\\BoilerPlate\\SpecialHelloWorld"
+	"ResourceModules": {
+		"ext.boilerPlate": {
+			"dependencies": [],
+			"messages": [],
+			"styles": [],
+			"scripts": []
+		}
 	},
 	"manifest_version": 2
 }
