@@ -6,7 +6,7 @@ following commands to make a clean directory of just this template without the
 Git meta-data and other examples.
 
 	cd extensions
-	git clone https://gerrit.wikimedia.org/r/p/mediawiki/extensions/BoilerPlate.git
+	git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/BoilerPlate.git
 	cp -R BoilerPlate ./MyExtension
 
 This automates the recommended code checkers for PHP and JavaScript code in Wikimedia projects
