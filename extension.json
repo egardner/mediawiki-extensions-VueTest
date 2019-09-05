@@ -17,10 +17,14 @@
 		"BoilerPlateEnableFoo": {
 			"description": "Enable the Foo feature.",
 			"value": true
+		},
+		"BoilerPlateVandalizeEachPage": {
+			"description": "Write 'BoilerPlate was here' on each page",
+			"value": false
 		}
 	},
 	"Hooks": {
-		"Something": "MediaWiki\\Extension\\BoilerPlate\\Hooks::onSomething"
+		"BeforePageDisplay": "MediaWiki\\Extension\\BoilerPlate\\Hooks::onBeforePageDisplay"
 	},
 	"MessagesDirs": {
 		"BoilerPlate": [

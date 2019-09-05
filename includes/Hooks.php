@@ -22,12 +22,16 @@ namespace MediaWiki\Extension\BoilerPlate;
 class Hooks {
 
 	/**
-	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/Something
-	 * @param string $arg1 First argument
-	 * @param array $arg2
+	 * @see https://www.mediawiki.org/wiki/Manual:Hooks/BeforePageDisplay
+	 * @param \OutputPage $out
+	 * @param \Skin $skin
 	 */
-	public static function onSomething( $arg1, array $arg2 ) {
-		// Stub
+	public static function onBeforePageDisplay( \OutputPage $out, \Skin $skin ) {
+		$config = $out->getConfig();
+		if ( $config->get( 'BoilerPlateVandalizeEachPage' ) ) {
+			$out->addHTML( '<p>BoilerPlate was here</p>' );
+			$out->addModules( 'oojs-ui-core' );
+		}
 	}
 
 }
