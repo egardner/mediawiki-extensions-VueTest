@@ -1,46 +1,76 @@
 {
-	"name": "BoilerPlate",
+	"name": "VueTest",
 	"author": [
-		"Your Name"
+		"Eric Gardner"
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:BoilerPlate",
-	"descriptionmsg": "boilerplate-desc",
+	"descriptionmsg": "vuetest-desc",
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
 		"MediaWiki": ">= 1.32.0"
 	},
 	"AutoloadNamespaces": {
-		"MediaWiki\\Extension\\BoilerPlate\\": "includes/"
+		"MediaWiki\\Extension\\VueTest\\": "includes/"
 	},
-	"config": {
-		"BoilerPlateEnableFoo": {
-			"description": "Enable the Foo feature.",
-			"value": true
-		},
-		"BoilerPlateVandalizeEachPage": {
-			"description": "Write 'BoilerPlate was here' on each page",
-			"value": false
-		}
-	},
+	"config": {},
 	"Hooks": {
-		"BeforePageDisplay": "MediaWiki\\Extension\\BoilerPlate\\Hooks::onBeforePageDisplay"
+		"BeforePageDisplay": "MediaWiki\\Extension\\VueTest\\Hooks::onBeforePageDisplay"
 	},
 	"MessagesDirs": {
-		"BoilerPlate": [
+		"VueTest": [
 			"i18n"
 		]
 	},
+	"SpecialPages": {
+		"VueTest": "MediaWiki\\Extension\\VueTest\\SpecialVueSandbox"
+	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
-		"remoteExtPath": "BoilerPlate/resources"
+		"remoteExtPath": "VueTest/resources"
 	},
 	"ResourceModules": {
-		"ext.boilerPlate": {
-			"dependencies": [],
+		"ext.vueTest": {
+			"dependencies": [
+				"ext.vueTest.components",
+				"ext.vueTest.plugins",
+				"vue",
+				"mediawiki.api"
+			],
 			"messages": [],
 			"styles": [],
-			"scripts": []
+			"scripts": [
+				"init.js"
+			]
+		},
+		"ext.vueTest.plugins": {
+			"packageFiles": [
+				"plugins/index.js",
+				"plugins/i18n.js",
+				"plugins/api.js"
+			]
+		},
+		"ext.vueTest.components": {
+			"messages": [
+				"vuetest-app-welcome",
+				"vuetest-app-intro",
+				"vuetest-apirequest-title",
+				"vuetest-apirequest-intro",
+				"vuetest-apirequest-button",
+				"vuetest-apirequest-pending",
+				"vuetest-computed-property-title",
+				"vuetest-computed-property-intro",
+				"vuetest-two-way-binding-title",
+				"vuetest-two-way-binding-intro"
+			],
+			"styles": [],
+			"packageFiles": [
+				"components/index.js",
+				"components/App.vue",
+				"components/ApiRequestModule.vue",
+				"components/ComputedPropertyModule.vue",
+				"components/TwoWayBindingModule.vue"
+			]
 		}
 	},
 	"manifest_version": 2

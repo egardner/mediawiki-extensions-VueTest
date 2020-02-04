@@ -4,5 +4,17 @@
 			"Your Name"
 		]
 	},
-	"boilerplate-desc": "{{desc|name=Boilerplate|url=https://www.mediawiki.org/wiki/Extension:Boilerplate}}"
+	"vuetest": "The name of the extension's special page in Special:SpecialPages",
+	"vuetest-desc": "{{desc}}",
+	"vuetest-summary": "Description appearing on top of Special:VueTest.",
+	"vuetest-app-welcome": "Header message for App component",
+	"vuetest-app-intro": "Intro text for App component",
+	"vuetest-apirequest-title": "Title for ApiRequestModule",
+	"vuetest-apirequest-intro": "Intro text for ApiRequestModule",
+	"vuetest-apirequest-button": "Button label for ApiRequestModule",
+	"vuetest-apirequest-pending": "Pending message for ApiRequestModule",
+	"vuetest-computed-property-title": "Title for ComputedPropertyModule",
+	"vuetest-computed-property-intro": "Intro text for ComputedPropertyModule",
+	"vuetest-two-way-binding-title": "Title for TwoWayBindingModule",
+	"vuetest-two-way-binding-intro": "Intro text for TwoWayBindingModule"
 }

@@ -17,7 +17,7 @@
  * @file
  */
 
-namespace MediaWiki\Extension\BoilerPlate;
+namespace MediaWiki\Extension\VueTest;
 
 class Hooks {
 
@@ -27,11 +27,6 @@ class Hooks {
 	 * @param \Skin $skin
 	 */
 	public static function onBeforePageDisplay( \OutputPage $out, \Skin $skin ) {
-		$config = $out->getConfig();
-		if ( $config->get( 'BoilerPlateVandalizeEachPage' ) ) {
-			$out->addHTML( '<p>BoilerPlate was here</p>' );
-			$out->addModules( 'oojs-ui-core' );
-		}
+		// Placeholder
 	}
-
 }

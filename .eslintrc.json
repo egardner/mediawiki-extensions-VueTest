@@ -2,10 +2,26 @@
 	"root": true,
 	"extends": [
 		"wikimedia/client",
-		"wikimedia/jquery"
+		"wikimedia/jquery",
+		"plugin:vue/recommended"
 	],
 	"globals": {
 		"mw": false,
-		"OO": false
+		"OO": false,
+		"require": "readonly",
+		"module": false
+	},
+	"rules": {
+		"vue/html-indent": [ "warn", "tab" ],
+		"vue/max-attributes-per-line": [ "warn", {
+			"singleline": 2,
+			"multiline": {
+				"max": 1,
+				"allowFirstLine": true
+			} 
+		} ],
+		"vue/v-on-style": [ "error", "longform" ],
+		"vue/v-bind-style": [ "error", "longform" ],
+		"vue/v-slot-style": [ "error", "longform" ]
 	}
 }

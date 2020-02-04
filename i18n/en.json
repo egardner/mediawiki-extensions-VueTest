@@ -4,5 +4,17 @@
 			"Your Name"
 		]
 	},
-	"boilerplate-desc": "This is an example extension"
+	"vuetest": "Vue.js Sandbox",
+	"vuetest-desc": "Vue.js sandbox",
+	"vuetest-summary": "A place to test out Vue.js components and MediaWiki integration",
+	"vuetest-app-welcome": "Hello from Vue!",
+	"vuetest-app-intro": "Below are a series of example components to show how Vue.js can be used in MediaWiki. All component files can be found in the <code>resources/components</code> directory of this extension.",
+	"vuetest-apirequest-title": "API Request Example",
+	"vuetest-apirequest-intro": "Click the button below to request article data from the revisions API for the specified page and display it.",
+	"vuetest-apirequest-button": "Request Wikitext",
+	"vuetest-apirequest-pending": "Waiting...",
+	"vuetest-computed-property-title": "Computed Property Example",
+	"vuetest-computed-property-intro": "Change the number values below and see the results update in real time.",
+	"vuetest-two-way-binding-title": "Two-way Binding Example",
+	"vuetest-two-way-binding-intro": "Vue.js supports [[https://vuejs.org/v2/guide/forms.html|two-way data binding]] in form input elements. Component data and user input are automatically kept in sync. Type in the input field below to see this feature in action."
 }

@@ -9,14 +9,14 @@ module.exports = function ( grunt ) {
 	grunt.initConfig( {
 		eslint: {
 			options: {
-				extensions: [ '.js', '.json' ],
+				extensions: [ '.js', '.json', '.vue' ],
 				cache: true
 			},
 			all: '.'
 		},
 		stylelint: {
 			all: [
-				'**/*.{css,less}',
+				'**/*.{css,less,vue}',
 				'!node_modules/**',
 				'!vendor/**'
 			]

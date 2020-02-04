@@ -1,21 +1,45 @@
-This is a blank extension template. It doesn't really do anything on its own.
-It is intended to provide a boiler template for an actual MediaWiki extension.
+# Mediawiki Vue.js Sandbox
 
-If you are checking this out from Git and intend to use it, you may use the
-following commands to make a clean directory of just this template without the
-Git meta-data and other examples.
+This dummy extension template is intended to demonstrate how Vue.js can be
+used within a MediaWiki envirionment. It is based on the Boilerplate
+extension.
 
-	cd extensions
-	git clone https://gerrit.wikimedia.org/r/mediawiki/extensions/BoilerPlate.git
-	cp -R BoilerPlate ./MyExtension
+## Installation
 
-This automates the recommended code checkers for PHP and JavaScript code in Wikimedia projects
-(see https://www.mediawiki.org/wiki/Continuous_integration/Entry_points).
-To take advantage of this automation.
+Download this extension into the `extensions` directory of your local
+MediaWiki instance. Make sure that you've also checked out this patch in MW
+Core:
 
-1. install nodejs, npm, and PHP composer
-2. change to the extension's directory
-3. `npm install`
-4. `composer install`
+https://gerrit.wikimedia.org/r/c/mediawiki/core/+/569692/
+
+Running `npm install` in this extension's directory will install all
+development dependencies.
 
 Once set up, running `npm test` and `composer test` will run automated code checks.
+
+## Usage
+
+This extension adds a new special page, `Special:VueTest`. This page contains
+several interactive demos to showcase some of what you can do with Vue, as well as
+how this tool can be integrated in a MediaWiki envirionment. Most source
+files are annotated and contain links to the relevant areas of the [Vue.js documentation][1].
+
+### Currently supported:
+
+* Single-file Vue components using ES5 (plus require/module.exports)
+* Linting JS, CSS/LESS, and HTML in .vue files
+* Less compilation in component style blocks
+* CSS Janus works (try uselang=ar to see it in action)
+* Vue.js Devtools (use debug=true or set $wgVueDevelopmentMode = true in config
+* mw.message and mw.api functionality is provided via plugins (see `resources/plugins` )
+
+### Not currently supported:
+
+* Using non-ES5 JS (in vue files or elsewhere)
+* Scoped component styles
+* Hot module reloading in development
+* Non-LESS pre-processors
+* Non-HTML templates (Jade, etc)
+
+[1]: https://vuejs.org/v2/guide/
+
