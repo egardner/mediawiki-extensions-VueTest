@@ -1,0 +1,16 @@
+{
+	"extends": [
+		"../../.eslintrc.json"
+	],
+	"globals": {
+		"global": true,
+		"require": true
+	},
+	"rules": {
+		"no-implicit-globals": "off",
+		"max-len": "off"
+	},
+	"env": {
+		"jest": true
+	}
+}

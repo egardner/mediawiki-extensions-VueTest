@@ -1,18 +1,38 @@
 {
 	"private": true,
 	"scripts": {
-		"test": "grunt test"
+		"test": "grunt test && npm run test:unit",
+		"test:unit": "jest"
 	},
 	"devDependencies": {
+		"@vue/test-utils": "^1.0.0-beta.31",
 		"eslint-config-wikimedia": "0.15.0",
 		"eslint-plugin-vue": "^6.1.2",
 		"grunt": "1.0.4",
 		"grunt-banana-checker": "0.8.1",
 		"grunt-eslint": "22.0.0",
 		"grunt-stylelint": "0.13.0",
-		"stylelint-config-wikimedia": "0.8.0"
+		"jest": "^25.1.0",
+		"stylelint-config-wikimedia": "0.8.0",
+		"vue": "^2.6.11",
+		"vue-jest": "^3.0.5",
+		"vue-template-compiler": "^2.6.11"
 	},
 	"eslintIgnore": [
 		"vendor/**"
-	]
+	],
+	"jest": {
+		"moduleFileExtensions": [
+			"js",
+			"json",
+			"vue"
+		],
+		"transform": {
+			".*\\.(vue)$": "vue-jest"
+		},
+		"testRegex": "tests/jest/.*\\.(js|jsx)$",
+		"setupFiles": [
+			"./jest.setup.js"
+		]
+	}
 }

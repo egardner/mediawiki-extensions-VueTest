@@ -23,6 +23,8 @@ var i18nPlugin = {
 		 * https://vuejs.org/v2/guide/custom-directive.html
 		 */
 		Vue.directive( 'i18n-html', {
+			isLiteral: true,
+
 			bind( el, binding ) {
 				var messageKey;
 
@@ -39,12 +41,19 @@ var i18nPlugin = {
 		 * This adds an $i18n() instance method that can be used by all
 		 * components
 		 *
-		 * @param {string} msgKey
-		 * @param {Object} [params]
+		 * @param {string} msgKey key for the desired message
+		 * @param {...*} params An arbitrary number of additional args can be
+		 * provided as message params
 		 * @return {Object} mw.message object
 		 */
-		Vue.prototype.$i18n = function ( msgKey, params ) {
-			return mw.message( msgKey, params );
+		Vue.prototype.$i18n = function ( msgKey ) {
+			// Determine if any additional params are present
+			if ( arguments.length > 1 ) {
+				return mw.message.apply( mw, arguments );
+			} else {
+				return mw.message( msgKey );
+			}
+
 		};
 	}
 };
