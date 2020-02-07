@@ -1,0 +1,29 @@
+{
+	"batchcomplete": "",
+	"query": {
+		"normalized": [
+			{
+				"from": "Main_Page",
+				"to": "Main Page"
+			}
+		],
+		"pages": {
+			"1": {
+				"pageid": 1,
+				"ns": 0,
+				"title": "Main Page",
+				"revisions": [
+					{
+						"slots": {
+							"main": {
+								"contentmodel": "wikitext",
+								"contentformat": "text/x-wiki",
+								"*": "== Test Files ==\n* [[:File:Chinatown.jpeg]]\n* [[:File:House.jpg]]\n* [[:File:Snow_Cat.jpeg]]\n\n== Quick Links ==\n* [[Special:NewItem]]\n* [[Special:NewProperty]]\n* [[Special:Version]]\n* [[Special:UploadWizard]]\n* [[Special:HelloWorld]]"
+							}
+						}
+					}
+				]
+			}
+		}
+	}
+}

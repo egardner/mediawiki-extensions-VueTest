@@ -19,8 +19,6 @@
 		-->
 		<h1>{{ $i18n( 'vuetest-app-welcome') }}</h1>
 
-		<p>{{ $i18n( 'vuetest-app-welcome', 'another arg', 2, { foo: 'bar' } ) }}</p>
-
 		<!--
 			The same plugin also defines a custom directive, v-i18n-html.
 			Vue includes some built-in directives like v-if, v-else, v-for, etc.
