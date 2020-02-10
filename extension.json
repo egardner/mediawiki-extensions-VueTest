@@ -61,7 +61,10 @@
 				"vuetest-computed-property-title",
 				"vuetest-computed-property-intro",
 				"vuetest-two-way-binding-title",
-				"vuetest-two-way-binding-intro"
+				"vuetest-two-way-binding-intro",
+				"vuetest-parent-child-communication-title",
+				"vuetest-parent-child-communication-intro",
+				"vuetest-child-component-button"
 			],
 			"styles": [],
 			"packageFiles": [
@@ -69,7 +72,9 @@
 				"components/App.vue",
 				"components/ApiRequestModule.vue",
 				"components/ComputedPropertyModule.vue",
-				"components/TwoWayBindingModule.vue"
+				"components/TwoWayBindingModule.vue",
+				"components/ParentChildCommunicationModule.vue",
+				"components/ChildComponent.vue"
 			]
 		}
 	},

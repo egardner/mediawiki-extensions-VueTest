@@ -1,5 +1,3 @@
-/* eslint-disable one-var */
-
 const VueTestUtils = require( '@vue/test-utils' );
 const App = require( '../../resources/components/App.vue' );
 const TwoWayBindingModule = require( '../../resources/components/TwoWayBindingModule.vue' );

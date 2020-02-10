@@ -50,6 +50,7 @@
 		<two-way-binding-module />
 		<computed-property-module />
 		<api-request-module />
+		<parent-child-communication-module />
 	</div>
 </template>
 
@@ -61,14 +62,16 @@
 <script>
 var ApiRequestModule = require( './ApiRequestModule.vue' ),
 	ComputedPropertyModule = require( './ComputedPropertyModule.vue' ),
-	TwoWayBindingModule = require( './TwoWayBindingModule.vue' );
+	TwoWayBindingModule = require( './TwoWayBindingModule.vue' ),
+	ParentChildCommunicationModule = require( './ParentChildCommunicationModule.vue' );
 
 module.exports = {
 	name: 'App',
 	components: {
 		'api-request-module': ApiRequestModule,
 		'computed-property-module': ComputedPropertyModule,
-		'two-way-binding-module': TwoWayBindingModule
+		'two-way-binding-module': TwoWayBindingModule,
+		'parent-child-communication-module': ParentChildCommunicationModule
 	}
 };
 </script>

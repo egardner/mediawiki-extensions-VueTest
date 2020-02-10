@@ -16,5 +16,8 @@
 	"vuetest-computed-property-title": "Computed Property Example",
 	"vuetest-computed-property-intro": "Change the number values below and see the results update in real time.",
 	"vuetest-two-way-binding-title": "Two-way Binding Example",
-	"vuetest-two-way-binding-intro": "Vue.js supports [[https://vuejs.org/v2/guide/forms.html|two-way data binding]] in form input elements. Component data and user input are automatically kept in sync. Type in the input field below to see this feature in action."
+	"vuetest-two-way-binding-intro": "Vue.js supports [[https://vuejs.org/v2/guide/forms.html|two-way data binding]] in form input elements. Component data and user input are automatically kept in sync. Type in the input field below to see this feature in action.",
+	"vuetest-parent-child-communication-title": "Parent-child communication example",
+	"vuetest-parent-child-communication-intro": "Parent components can pass data down to child components via 'prop' attributes defined on the children. Child components can communicate to their parents by emitting events. If more complex, multi-level ways of sharing data are needed, it's probably time to adopt a state-management system like Vuex. Type in the input box to change the data passed down to the child component with dynamic props. Click the buttons in the child components to update data in the parent.",
+	"vuetest-child-component-button": "Click me to update the count in the parent"
 }

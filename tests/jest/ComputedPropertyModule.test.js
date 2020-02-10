@@ -1,6 +1,3 @@
-/* eslint-disable one-var */
-
-// const Vue = require( 'vue' );
 const VueTestUtils = require( '@vue/test-utils' );
 const ComputedPropertyModule = require( '../../resources/components/ComputedPropertyModule.vue' );
 const i18n = require( '../../resources/plugins/i18n' );

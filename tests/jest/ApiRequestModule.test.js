@@ -1,5 +1,3 @@
-/* eslint-disable one-var */
-
 // Setup mock API response
 const response = require( './fixtures/revisions.json' );
 global.mw.Api.prototype.get.mockResolvedValue( response );

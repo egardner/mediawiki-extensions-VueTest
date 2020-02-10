@@ -8,7 +8,8 @@
 	},
 	"rules": {
 		"no-implicit-globals": "off",
-		"max-len": "off"
+		"max-len": "off",
+		"one-var": "off"
 	},
 	"env": {
 		"jest": true

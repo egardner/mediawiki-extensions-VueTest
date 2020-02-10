@@ -16,5 +16,8 @@
 	"vuetest-computed-property-title": "Title for ComputedPropertyModule",
 	"vuetest-computed-property-intro": "Intro text for ComputedPropertyModule",
 	"vuetest-two-way-binding-title": "Title for TwoWayBindingModule",
-	"vuetest-two-way-binding-intro": "Intro text for TwoWayBindingModule"
+	"vuetest-two-way-binding-intro": "Intro text for TwoWayBindingModule",
+	"vuetest-parent-child-communication-title": "Title for ParentChildCommunicationModule",
+	"vuetest-parent-child-communication-intro": "Intro text for ParentChildCommunicationModule",
+	"vuetest-child-component-button": "Button label for child component"
 }
