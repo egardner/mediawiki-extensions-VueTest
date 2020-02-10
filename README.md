@@ -32,6 +32,7 @@ files are annotated and contain links to the relevant areas of the [Vue.js docum
 * CSS Janus works (try uselang=ar to see it in action)
 * Vue.js Devtools (use debug=true or set $wgVueDevelopmentMode = true in config
 * mw.message and mw.api functionality is provided via plugins (see `resources/plugins` )
+* Unit testing of JS and Vue files via Jest ( `npm run test:unit` to run)
 
 ### Not currently supported:
 
@@ -40,6 +41,7 @@ files are annotated and contain links to the relevant areas of the [Vue.js docum
 * Hot module reloading in development
 * Non-LESS pre-processors
 * Non-HTML templates (Jade, etc)
+* Coverage report only includes JS files, not Vue files, for some reason
 
 [1]: https://vuejs.org/v2/guide/
 
