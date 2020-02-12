@@ -30,7 +30,7 @@ class SpecialVueSandbox extends \SpecialPage {
         <div id="vue-root">
             <p>This message will disappear once Vue.js initializes.</p>
         </div>
-        EOM;
+EOM;
 
 		$out->setPageTitle( $this->msg( 'vuetest' ) );
 		$out->addSubtitle( $this->msg( 'vuetest-summary' ) );
