@@ -22,6 +22,9 @@
 			"i18n"
 		]
 	},
+	"ExtensionMessagesFiles": {
+		"VueTestAlias": "VueTest.alias.php"
+	},
 	"SpecialPages": {
 		"VueTest": "MediaWiki\\Extension\\VueTest\\SpecialVueSandbox"
 	},
