@@ -2,10 +2,12 @@
   "private": true,
   "scripts": {
     "test": "grunt test && npm run test:unit",
-    "test:unit": "jest"
+    "test:unit": "npx vue-cli-service test:unit"
   },
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.31",
+    "@vue/cli-plugin-unit-jest": "4.2.2",
+    "@vue/cli-service": "4.2.2",
     "babel-core": "^6.26.3",
     "eslint-config-wikimedia": "0.15.0",
     "eslint-plugin-vue": "^6.1.2",
