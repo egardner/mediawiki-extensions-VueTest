@@ -51,6 +51,9 @@
 			]
 		},
 		"ext.vueTest.components": {
+			"dependencies": [
+				"mediawiki.language.names"
+			],
 			"messages": [
 				"vuetest-app-welcome",
 				"vuetest-app-intro",
@@ -64,7 +67,10 @@
 				"vuetest-two-way-binding-intro",
 				"vuetest-parent-child-communication-title",
 				"vuetest-parent-child-communication-intro",
-				"vuetest-child-component-button"
+				"vuetest-child-component-button",
+				"vuetest-language-search-title",
+				"vuetest-language-search-intro",
+				"vuetest-language-search-placeholder"
 			],
 			"styles": [],
 			"packageFiles": [
@@ -74,7 +80,9 @@
 				"components/ComputedPropertyModule.vue",
 				"components/TwoWayBindingModule.vue",
 				"components/ParentChildCommunicationModule.vue",
-				"components/ChildComponent.vue"
+				"components/ChildComponent.vue",
+				"components/LanguageSearchModule.vue",
+				"components/LanguageSearchComponent.vue"
 			]
 		}
 	},

@@ -19,5 +19,8 @@
 	"vuetest-two-way-binding-intro": "Vue.js supports [[https://vuejs.org/v2/guide/forms.html|two-way data binding]] in form input elements. Component data and user input are automatically kept in sync. Type in the input field below to see this feature in action.",
 	"vuetest-parent-child-communication-title": "Parent-child communication example",
 	"vuetest-parent-child-communication-intro": "Parent components can pass data down to child components via 'prop' attributes defined on the children. Child components can communicate to their parents by emitting events. If more complex, multi-level ways of sharing data are needed, it's probably time to adopt a state-management system like Vuex. Type in the input box to change the data passed down to the child component with dynamic props. Click the buttons in the child components to update data in the parent.",
-	"vuetest-child-component-button": "Click me to update the count in the parent"
+	"vuetest-child-component-button": "Click me to update the count in the parent",
+	"vuetest-language-search-title": "Language search",
+	"vuetest-language-search-intro": "A search component that lets the user search for a language. This is intended to test performance with many dynamically created nodes (this searches through {{PLURAL:$1|one language|$1 languages}}).",
+	"vuetest-language-search-placeholder": "Search by language name or code"
 }
