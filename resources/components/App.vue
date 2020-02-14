@@ -51,6 +51,7 @@
 		<computed-property-module />
 		<api-request-module />
 		<parent-child-communication-module />
+		<language-search-module />
 	</div>
 </template>
 
@@ -63,7 +64,8 @@
 var ApiRequestModule = require( './ApiRequestModule.vue' ),
 	ComputedPropertyModule = require( './ComputedPropertyModule.vue' ),
 	TwoWayBindingModule = require( './TwoWayBindingModule.vue' ),
-	ParentChildCommunicationModule = require( './ParentChildCommunicationModule.vue' );
+	ParentChildCommunicationModule = require( './ParentChildCommunicationModule.vue' ),
+	LanguageSearchModule = require( './LanguageSearchModule.vue' );
 
 module.exports = {
 	name: 'App',
@@ -71,7 +73,8 @@ module.exports = {
 		'api-request-module': ApiRequestModule,
 		'computed-property-module': ComputedPropertyModule,
 		'two-way-binding-module': TwoWayBindingModule,
-		'parent-child-communication-module': ParentChildCommunicationModule
+		'parent-child-communication-module': ParentChildCommunicationModule,
+		'language-search-module': LanguageSearchModule
 	}
 };
 </script>
