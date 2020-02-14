@@ -55,7 +55,8 @@ mw = {
 		parser: jest.fn()
 	},
 	language: {
-		convertNumber: jest.fn()
+		convertNumber: jest.fn(),
+		getData: jest.fn().mockReturnValue( {} )
 	},
 	log: {
 		deprecate: jest.fn(),
