@@ -15,7 +15,7 @@ describe( 'LanguageSearchComponent', () => {
 
 	it( 'updates the results property when the user has entered data', () => {
 		// Initial value should contain all results
-		expect( wrapper.vm.results.length ).toBe( 444 );
+		expect( wrapper.vm.results.length ).toBe( Object.keys( response ).length );
 
 		input.element.value = 'de';
 		input.trigger( 'input' );
