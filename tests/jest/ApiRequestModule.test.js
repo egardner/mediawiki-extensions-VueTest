@@ -12,7 +12,7 @@ const localVue = VueTestUtils.createLocalVue();
 localVue.use( i18n );
 localVue.use( api );
 
-describe( 'TwoWayBindingModule', () => {
+describe( 'ApiRequestModule', () => {
 	const wrapper = VueTestUtils.shallowMount( ApiRequestModule, { localVue } );
 	const button = wrapper.find( 'button' );
 

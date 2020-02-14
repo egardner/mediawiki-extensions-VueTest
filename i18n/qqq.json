@@ -19,5 +19,8 @@
 	"vuetest-two-way-binding-intro": "Intro text for TwoWayBindingModule",
 	"vuetest-parent-child-communication-title": "Title for ParentChildCommunicationModule",
 	"vuetest-parent-child-communication-intro": "Intro text for ParentChildCommunicationModule",
-	"vuetest-child-component-button": "Button label for child component"
+	"vuetest-child-component-button": "Button label for child component",
+	"vuetest-language-search-title": "Title for Language Search component",
+	"vuetest-language-search-intro": "Intro text for Language Search component",
+	"vuetest-language-search-placeholder": "Placeholder text for language search input"
 }
