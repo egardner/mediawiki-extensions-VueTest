@@ -7,26 +7,23 @@
 			v-bind:placeholder="$i18n( 'vuetest-language-search-placeholder' )"
 		>
 		<div class="mw-language-search-results">
-			<div
+			<language-search-result
 				v-for="result in results"
+				v-show="result.match"
 				v-bind:key="result.code"
-				class="mw-language-search-result"
-			>
-				<span class="mw-language-search-result-name">
-					{{ result.name }}
-				</span>
-				<span class="mw-language-search-result-code">
-					{{ result.code }}
-				</span>
-			</div>
+				v-bind:result="result.result"
+				v-bind:match-prop="result.matchProp"
+				v-bind:query="search"
+			/>
 		</div>
 	</div>
 </template>
 
 <script>
 var languageNames = mw.language.getData( mw.config.get( 'wgUserLanguage' ), 'languageNames' ),
+	autonyms = $.uls.data.getAutonyms(),
 	languageResults = Object.keys( languageNames ).map( function ( code ) {
-		return { code: code, name: languageNames[ code ] };
+		return { code: code, name: languageNames[ code ], autonym: autonyms[ code ] };
 	} );
 
 module.exports = {
@@ -38,11 +35,24 @@ module.exports = {
 	computed: {
 		results: function () {
 			var query = this.search.toLowerCase();
-			return languageResults.filter( function ( result ) {
-				return result.code.toLowerCase().substring( 0, query.length ) === query ||
-					result.name.toLowerCase().substring( 0, query.length ) === query;
+			return languageResults.map( function ( result ) {
+				var i, prop,
+					props = [ 'name', 'autonym', 'code' ];
+				for ( i = 0; i < props.length; i++ ) {
+					prop = props[ i ];
+					if (
+						result[ prop ] !== undefined &&
+						result[ prop ].toLowerCase().substring( 0, query.length ) === query
+					) {
+						return { result: result, match: true, matchProp: prop };
+					}
+				}
+				return { result: result, match: false };
 			} );
 		}
+	},
+	components: {
+		'language-search-result': require( './LanguageSearchResult.vue' )
 	}
 };
 </script>
@@ -71,15 +81,6 @@ module.exports = {
 		padding: 1em;
 		height: 200px;
 		overflow-y: auto;
-	}
-
-	&-result {
-		padding: 0.5em 0;
-
-		&-code {
-			float: right;
-			color: @colorGray7;
-		}
 	}
 }
 </style>

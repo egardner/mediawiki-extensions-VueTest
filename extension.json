@@ -85,7 +85,8 @@
 				"components/ParentChildCommunicationModule.vue",
 				"components/ChildComponent.vue",
 				"components/LanguageSearchModule.vue",
-				"components/LanguageSearchComponent.vue"
+				"components/LanguageSearchComponent.vue",
+				"components/LanguageSearchResult.vue"
 			]
 		}
 	},
