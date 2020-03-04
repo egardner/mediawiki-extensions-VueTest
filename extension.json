@@ -73,7 +73,8 @@
 				"vuetest-child-component-button",
 				"vuetest-language-search-title",
 				"vuetest-language-search-intro",
-				"vuetest-language-search-placeholder"
+				"vuetest-language-search-placeholder",
+				"searchsuggest-search"
 			],
 			"styles": [],
 			"packageFiles": [
@@ -85,7 +86,8 @@
 				"components/ParentChildCommunicationModule.vue",
 				"components/ChildComponent.vue",
 				"components/LanguageSearchModule.vue",
-				"components/LanguageSearchComponent.vue"
+				"components/LanguageSearchComponent.vue",
+				"components/SiteSearch.vue"
 			]
 		}
 	},
