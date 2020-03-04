@@ -47,6 +47,12 @@
 			locally (see below) or globally at the root-level Vue instance
 			before they can be used in templates in this way.
 		-->
+		<div class="app-search-wrapper">
+			<site-search
+				placeholder="Search Wikipedia"
+				button-label="Go"
+			/>
+		</div>
 		<two-way-binding-module />
 		<computed-property-module />
 		<api-request-module />
@@ -65,7 +71,8 @@ var ApiRequestModule = require( './ApiRequestModule.vue' ),
 	ComputedPropertyModule = require( './ComputedPropertyModule.vue' ),
 	TwoWayBindingModule = require( './TwoWayBindingModule.vue' ),
 	ParentChildCommunicationModule = require( './ParentChildCommunicationModule.vue' ),
-	LanguageSearchModule = require( './LanguageSearchModule.vue' );
+	LanguageSearchModule = require( './LanguageSearchModule.vue' ),
+	SiteSearchComponent = require( './SiteSearch.vue' );
 
 module.exports = {
 	name: 'App',
@@ -74,7 +81,8 @@ module.exports = {
 		'computed-property-module': ComputedPropertyModule,
 		'two-way-binding-module': TwoWayBindingModule,
 		'parent-child-communication-module': ParentChildCommunicationModule,
-		'language-search-module': LanguageSearchModule
+		'language-search-module': LanguageSearchModule,
+		'site-search': SiteSearchComponent
 	}
 };
 </script>
@@ -86,13 +94,16 @@ module.exports = {
 	NOTE: scoped styles are not currently supported in ResourceLoader. LESS
 	compilation is, however.
 -->
-<!--
+
 <style lang="less">
 @background-color: #ccc;
 
 .app {
-	background-color: @background-color;
+	// background-color: @background-color;
 	padding: 1em;
+
+	&-search-wrapper {
+		width: 20vw;
+	}
 }
 </style>
--->
